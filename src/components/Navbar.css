@@ -1,0 +1,19 @@
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6rem;
+  background: gainsboro;
+
+}
+
+.Nav_link {
+  outline: none;
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: .3s;
+}
+
+.Nav_link:hover { transform: scale(1.2); }
+
+.Nav_link:visited { color: #333333; }
