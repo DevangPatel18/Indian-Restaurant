@@ -1,0 +1,17 @@
+.main {
+  background: url('../assets/home-background.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.main .container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .title.is-1 {
+  font-size: 5rem;
+  text-shadow: .2rem .2rem 1rem black;
+  color: white;
+}
