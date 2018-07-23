@@ -1,12 +1,3 @@
-.Navbar {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 6rem;
-  background: gainsboro;
-
-}
-
 .Nav_link {
   outline: none;
   text-decoration: none;

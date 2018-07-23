@@ -9,4 +9,5 @@
 
 .App-title {
   font-size: 3em;
+  transform: translateY(20vh);
 }
