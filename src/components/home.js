@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './home.css';
 
 const Home = () => {
@@ -35,6 +36,11 @@ const Home = () => {
           </div>
 
         </div>
+      </section>
+
+      <section className="reservations">
+        <h2 className="title is-2 white">Book a table to reserve a spot!</h2>
+        <a className="button is-outlined is-white is-medium is-rounded"><NavLink  to="/reservations">Make a Reservation</NavLink></a>
       </section>
     </div>
   )

@@ -43,3 +43,22 @@
 .d { grid-area: d; }
 
 .e { grid-area: e; }
+
+.reservations {
+  background: #800000;
+  height: 330px;
+  text-align: center;
+}
+
+.reservations .title:after {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.reservations .title {
+  margin-bottom: 3rem;
+}
+
+.reservations a:visited { color: white; }
+
+.reservations a:hover { color: black; }
