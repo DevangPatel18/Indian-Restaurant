@@ -11,6 +11,31 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="food-intro container">
+        <div className="columns" style={{height:'600px'}}>
+
+          <div className="food-intro-text column is-4">
+            <h2 className="title is-2">Experience Indian cuisine!</h2>
+            <p>Adipisicing elit et ea excepteur exercitation sunt culpa officia deserunt dolore cillum anim. Ad culpa aliqua aute magna proident culpa esse dolor ut irure cupidatat culpa. Lorem ipsum et aute ea dolor aliquip magna non aliquip sint sit ut occaecat.</p>
+          </div>
+
+          <div className="column">
+            <div className="grid-container">
+              <div className="a">
+              </div>
+              <div className="b">
+              </div>
+              <div className="c">
+              </div>
+              <div className="e">
+              </div>
+              <div className="d">
+              </div>
+            </div>           
+          </div>
+
+        </div>
+      </section>
     </div>
   )
 }

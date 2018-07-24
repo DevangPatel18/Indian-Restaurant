@@ -15,3 +15,31 @@
   text-shadow: .2rem .2rem 1rem black;
   color: white;
 }
+
+.food-intro-text {
+  padding-right: 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "a c d" "b c d" "e e d";
+}
+
+.grid-container div{
+  background: beige;
+  min-height: 200px;
+}
+
+.a { grid-area: a; }
+
+.b { grid-area: b; }
+
+.c { grid-area: c; }
+
+.d { grid-area: d; }
+
+.e { grid-area: e; }

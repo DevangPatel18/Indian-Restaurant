@@ -15,3 +15,15 @@
 .container {
   padding: 5rem 0;
 }
+
+.title.is-2:after {
+  content: ' ';
+  display: block;
+  margin-top: 1.5rem;
+  width: 100px;
+  border: 1px solid black;
+}
+
+p {
+  letter-spacing: 2px
+}
