@@ -42,6 +42,19 @@ const Home = () => {
         <h2 className="title is-2 white">Book a table to reserve a spot!</h2>
         <a className="button is-outlined is-white is-medium is-rounded"><NavLink  to="/reservations">Make a Reservation</NavLink></a>
       </section>
+
+      <section className="location container">
+        <div className="location-intro">
+          <div className="location-intro-left">
+          </div>
+          <div className="location-intro-right">
+            <div>
+              <h2 className="title is-2">Located in downtown Toronto</h2>
+              <p>Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
