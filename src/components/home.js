@@ -40,7 +40,7 @@ const Home = () => {
 
       <section className="reservations">
         <h2 className="title is-2 white">Book a table to reserve a spot!</h2>
-        <a className="button is-outlined is-white is-medium is-rounded"><NavLink  to="/reservations">Make a Reservation</NavLink></a>
+        <NavLink className="button is-outlined is-white is-medium is-rounded" to="/reservations">Make a Reservation</NavLink>
       </section>
 
       <section className="location container">
