@@ -24,6 +24,11 @@ section {
   border: 1px solid black;
 }
 
+.title.is-2.centered:after {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
 .title.is-2.white {
   color: white;
 }

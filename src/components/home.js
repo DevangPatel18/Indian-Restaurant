@@ -3,6 +3,41 @@ import { NavLink } from 'react-router-dom';
 import './home.css';
 
 const Home = () => {
+  const serviceslist = [
+    {
+      type:"wifi",
+      class:"fas fa-wifi",
+      text:"Free wifi"
+    },
+    {
+      type:"cash",
+      class:"fas fa-money-bill",
+      text:"Accept cash and debit"
+    },
+    {
+      type:"credit",
+      class:"far fa-credit-card",
+      text:"Accept most credit cards (Visa/Mastercard)"
+    },
+    {
+      type:"parking",
+      class:"fas fa-parking",
+      text:"Nearby parking available"
+    },
+    {
+      type:"subway",
+      class:"fas fa-subway",
+      text:"Close to the subway"
+    }
+  ]
+
+  let service_html = serviceslist.map((service, i) =>
+    <div key={i} style={{color:"white", margin:"1rem 1rem"}}>
+      <i className={service.class} style={{fontSize: "4rem"}}></i>
+      <p style={{width: "8rem", paddingTop: "1rem"}}>{service.text}</p>
+    </div>
+  );
+
   return (
     <div>
 
@@ -39,7 +74,7 @@ const Home = () => {
       </section>
 
       <section className="reservations">
-        <h2 className="title is-2 white">Book a table to reserve a spot!</h2>
+        <h2 className="title is-2 centered white">Book a table to reserve a spot!</h2>
         <NavLink className="button is-outlined is-white is-medium is-rounded" to="/reservations">Make a Reservation</NavLink>
       </section>
 
@@ -55,6 +90,15 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <section className="services">
+        <div className="container">
+          <h2 className="title is-2 centered white">Our full services</h2>
+          <div className="services-tiles">
+            {service_html}
+          </div>
+        </div>
+      </section>      
     </div>
   )
 }
