@@ -1,0 +1,127 @@
+.main {
+  background: url('../assets/home-background.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.main .container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .title.is-1 {
+  font-size: 5rem;
+  text-shadow: .2rem .2rem 1rem black;
+  color: white;
+}
+
+.food-intro-text {
+  padding-right: 3rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "a c d" "b c d" "e e d";
+}
+
+.grid-container div{
+  background: beige;
+  min-height: 200px;
+}
+
+.a { grid-area: a; }
+
+.b { grid-area: b; }
+
+.c { grid-area: c; }
+
+.d { grid-area: d; }
+
+.e { grid-area: e; }
+
+.reservations {
+  background: #800000;
+  height: 330px;
+  text-align: center;
+}
+
+.reservations .title {
+  margin-bottom: 3rem;
+}
+
+.reservations a:visited { color: white; }
+
+.reservations a:hover { color: black; }
+
+.location {
+  display: flex;
+  justify-content: center;
+}
+
+.location-intro {
+  max-width:1000px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.location-intro-left {
+  background: url('../assets/downtown-toronto.jpg') center no-repeat;
+  background-size: cover;
+  width: 60%;
+  display: flex;
+  position: relative;
+}
+
+.location-intro-right {
+  position: relative;
+  background: #F0F8FF;
+  width: 40%;
+  display: flex;
+  padding: 4rem;
+}
+
+.services {
+  background: #778899;
+  text-align: center;
+}
+
+.services-tiles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+
+.contact-container .table {
+  margin: 0 6rem;
+}
+
+.table td, .table th {
+  border: 0px solid white;
+}
+
+.table th {
+  text-align: center;
+}
+
+.contact-schedule td:first-of-type {
+  text-align: right;
+}
+
+.contact-info td:first-of-type {
+  font-size: 2rem;
+  padding: 0;
+}

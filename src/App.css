@@ -9,4 +9,38 @@
 
 .App-title {
   font-size: 3em;
+  transform: translateY(20vh);
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.title.is-2:after {
+  content: ' ';
+  display: block;
+  margin-top: 1.5rem;
+  width: 100px;
+  border: 1px solid black;
+}
+
+.title.is-2.centered {
+  text-align: center;
+}
+
+.title.is-2.centered:after {
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.title.is-2.white {
+  color: white;
+}
+
+.title.is-2.white:after {
+  border: 1px solid white;
+}
+
+p {
+  letter-spacing: 2px
 }
