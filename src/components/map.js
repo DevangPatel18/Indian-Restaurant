@@ -15,12 +15,10 @@ class Map extends Component {
       </GoogleMap>
    ));
    return(
-      <div>
-        <GoogleMapExample
-          containerElement={ <div style={{ height: '500px', width: '100%' }} /> }
-          mapElement={ <div style={{ height: '100%' }} /> }
-        />
-      </div>
+      <GoogleMapExample
+        containerElement={ <div style={{ height: '500px', width: '800px', margin: '0 auto'}} /> }
+        mapElement={ <div style={{ height: '100%' }} /> }
+      />
    );
    }
 };
