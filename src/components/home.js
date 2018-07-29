@@ -106,7 +106,6 @@ const Home = () => {
 
         <div className="container">
           <h2 className="title is-2 centered">We hope to see you soon!</h2>
-          <div className="contact-container-blocks">
             <div className="contact-container">
               <table className="table contact-schedule">
                 <thead><tr><th colSpan="2">Hours</th></tr></thead>
@@ -154,7 +153,6 @@ const Home = () => {
             </div>
             <Map></Map>
 
-          </div>
         </div>
       </section>
 
