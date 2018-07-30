@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Map from './map.js';
+// import Map from './map.js';
 import './home.css';
 
 const Home = () => {
@@ -151,7 +151,7 @@ const Home = () => {
 
               </table>
             </div>
-            <Map></Map>
+            {/*<Map></Map>*/}
 
         </div>
       </section>
