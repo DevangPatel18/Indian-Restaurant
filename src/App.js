@@ -9,6 +9,7 @@ import Contact from './components/contact.js';
 import Reservations from './components/reservations.js';
 import Error from './components/error.js';
 import Navbar from './components/Navbar.js';
+import Footer from './components/footer.js';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             <Route component={Error} />
           </Switch>
+          <Footer></Footer>
         </div>
       </BrowserRouter>
     );
