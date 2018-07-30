@@ -1,11 +1,14 @@
 import React from 'react';
+import "./about.css";
 
 const About = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1 className="App-title">About</h1>
-      </header>
+    <div>
+      <section className="about-head">
+        <div className="container">
+          <h1 className="title is-1 has-text-centered has-text-light">Our Story</h1>
+        </div>        
+      </section>
     </div>
   )
 }

@@ -1,0 +1,16 @@
+.about-head {
+  background: url('../assets/about-background.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.about-head .container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-head .title {
+  text-shadow: .2rem .2rem 1rem black;
+}
+
