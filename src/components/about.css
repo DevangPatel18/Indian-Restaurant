@@ -1,0 +1,33 @@
+.about-head {
+  background: url('../assets/about-background.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.about-head .container {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-head .title {
+  font-size: 5rem;
+}
+
+.about-head .title {
+  text-shadow: .2rem .2rem 1rem black;
+}
+
+.about-story .columns {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-story p {
+  margin: 3rem 0;
+}
+
+.about-quote {
+  max-width: 40em;
+  margin: 0 auto;
+}
