@@ -26,3 +26,8 @@
 .about-story p {
   margin: 3rem 0;
 }
+
+.about-quote {
+  max-width: 40em;
+  margin: 0 auto;
+}

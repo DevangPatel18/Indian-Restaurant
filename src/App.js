@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
-import 'bulma/css/bulma.css'
+import 'bulma/css/bulma.css';
+import 'bulma-extensions/bulma-carousel/dist/css/bulma-carousel.min.css';
 import Home from './components/home.js';
 import Menu from './components/menu.js';
 import About from './components/about.js';
