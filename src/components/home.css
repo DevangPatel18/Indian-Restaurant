@@ -1,19 +1,7 @@
 .main {
   background: url('../assets/home-background.jpg') center no-repeat;
   background-size: cover;
-}
-
-.main .container {
-  height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main .title.is-1 {
-  font-size: 5rem;
-  text-shadow: .2rem .2rem 1rem black;
-  color: white;
+  height: 70vh;
 }
 
 .food-intro-text {
@@ -47,27 +35,17 @@
 .reservations {
   background: #800000;
   height: 330px;
-  text-align: center;
 }
 
 .reservations .title {
   margin-bottom: 3rem;
 }
 
-.reservations a:visited { color: white; }
-
-.reservations a:hover { color: black; }
-
-.location {
-  display: flex;
-  justify-content: center;
-}
-
 .location-intro {
   max-width:1000px;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .location-intro-left {
@@ -88,7 +66,6 @@
 
 .services {
   background: #778899;
-  text-align: center;
 }
 
 .services-tiles {
@@ -98,10 +75,7 @@
 }
 
 .contact-container {
-  display: flex;
-  justify-content: center;
   flex-direction: row;
-  flex-wrap: wrap;
   padding: 2rem;
 }
 

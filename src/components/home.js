@@ -33,8 +33,8 @@ const Home = () => {
   ]
 
   let service_html = serviceslist.map((service, i) =>
-    <div key={i} style={{color:"white", margin:"1rem 1rem"}}>
-      <i className={service.class} style={{fontSize: "4rem"}}></i>
+    <div key={i} style={{margin:"1rem"}}>
+      <i className={service.class + ' is-size-1'}></i>
       <p style={{width: "8rem", paddingTop: "1rem"}}>{service.text}</p>
     </div>
   );
@@ -42,11 +42,9 @@ const Home = () => {
   return (
     <div>
 
-      <section className="main">
-        <div className="container">
-          <h1 className="title is-1">Indian Restaurant</h1>
-        </div>
-      </section>
+      <header className="main centercontent">
+          <h1 className="has-text-light">Indian Restaurant</h1>
+      </header>
 
       <section className="food-intro container">
         <div className="columns" style={{height:'600px'}}>
@@ -74,12 +72,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="reservations">
-        <h2 className="title is-2 centered white">Book a table to reserve a spot!</h2>
+      <section className="reservations has-text-centered">
+        <h2 className="title is-2 has-text-centered has-text-light">Book a table to reserve a spot!</h2>
         <NavLink className="button is-outlined is-white is-medium is-rounded" to="/reservations">Make a Reservation</NavLink>
       </section>
 
-      <section className="location container">
+      <section className="location centercontent container">
         <div className="location-intro">
           <div className="location-intro-left">
           </div>
@@ -92,10 +90,10 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="services">
+      <section className="services has-text-centered">
         <div className="container">
-          <h2 className="title is-2 centered white">Our full services</h2>
-          <div className="services-tiles">
+          <h2 className="title is-2 has-text-centered has-text-light">Our full services</h2>
+          <div className="services-tiles has-text-light">
             {service_html}
           </div>
         </div>
@@ -105,8 +103,8 @@ const Home = () => {
       <section className="contact">
 
         <div className="container">
-          <h2 className="title is-2 centered">We hope to see you soon!</h2>
-            <div className="contact-container">
+          <h2 className="title is-2 has-text-centered">We hope to see you soon!</h2>
+            <div className="contact-container centercontent">
               <table className="table contact-schedule">
                 <thead><tr><th colSpan="2">Hours</th></tr></thead>
                 <tbody>

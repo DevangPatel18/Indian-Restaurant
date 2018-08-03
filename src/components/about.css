@@ -1,21 +1,10 @@
-.about-head {
+.about {
   background: url('../assets/about-background.jpg') center no-repeat;
   background-size: cover;
+  height: 40vh;
 }
 
-.about-head .container {
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-head .title {
-  font-size: 5rem;
-}
-
-.about-head .title {
-  text-shadow: .2rem .2rem 1rem black;
+.about .container {
 }
 
 .about-story .columns {

@@ -1,15 +1,13 @@
-.App {
-  text-align: center;
+header h1 {
+  font-size: 5rem;
+  text-shadow: .2rem .2rem 1rem black;
 }
 
-.App-header {
-  height: 150px;
-  padding: 20px;
-}
-
-.App-title {
-  font-size: 3em;
-  transform: translateY(20vh);
+.centercontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 section {
@@ -24,20 +22,12 @@ section {
   border: 1px solid black;
 }
 
-.title.is-2.centered {
-  text-align: center;
-}
-
-.title.is-2.centered:after, .title.has-text-centered:after {
+.title.has-text-centered:after {
   margin: 0 auto;
   margin-top: 1.5rem;
 }
 
-.title.is-2.white {
-  color: white;
-}
-
-.title.is-2.white:after, .title.has-text-light:after {
+.title.has-text-light:after {
   border: 1px solid white;
 }
 
