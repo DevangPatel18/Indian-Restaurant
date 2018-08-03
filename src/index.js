@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import bulmaCarousel from 'bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
@@ -31,7 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
-
-  // carousels now contains an array of all Carousel instances
-  var carousels = bulmaCarousel.attach(); 
+  
 });

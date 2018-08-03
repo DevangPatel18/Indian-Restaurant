@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./about.css";
+import bulmaCarousel from 'bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js';
 
-const About = () => {
-  return (
+class About extends Component {
+  componentDidMount() {
+    // carousels now contains an array of all Carousel instances
+    var carousels = bulmaCarousel.attach();
+  }
+
+  render() {
+    return (
     <div>
       <header className="about centercontent">
         <h1 className="has-text-light">Our Story</h1>
@@ -52,7 +59,7 @@ const About = () => {
               </div>
 
               <div className='carousel-item content'>
-                <p className='has-text-centered about-quote'>In ut tempor sit in in esse ea minim minim sunt consequat aliquip enim in voluptate nisi anim. Pariatur in voluptate fugiat duis amet aute et labore incididunt in aute est consectetur occaecat do.</p>
+                <p className="has-text-centered is-italic about-quote">In ut tempor sit in in esse ea minim minim sunt consequat aliquip enim in voluptate nisi anim. Pariatur in voluptate fugiat duis amet aute et labore incididunt in aute est consectetur occaecat do.</p>
                 
                 <p className="has-text-centered has-text-weight-bold">Customer 52</p>
               </div>
@@ -86,6 +93,7 @@ const About = () => {
       </section>
     </div>
   )
+}
 }
 
 export default About;
