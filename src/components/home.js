@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 // import Map from './map.js';
 import './home.css';
+import downtown_to from '../assets/mark-jefferson-paraan-252931-unsplash.jpg';
 
 const Home = () => {
   const serviceslist = [
@@ -80,6 +81,8 @@ const Home = () => {
       <section className="location centercontent container">
         <div className="location-intro">
           <div className="location-intro-left">
+              <img src={downtown_to} className="location-intro-left-image" alt="Downtown Toronto"/>
+              <figcaption className="location-intro-left-image-caption">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
           </div>
           <div className="location-intro-right">
             <div>
