@@ -73,7 +73,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="reservations has-text-centered">
+      <section className="home-reservations has-text-centered">
         <h2 className="title is-2 has-text-centered has-text-light">Book a table to reserve a spot!</h2>
         <NavLink className="button is-outlined is-white is-medium is-rounded" to="/reservations">Make a Reservation</NavLink>
       </section>
