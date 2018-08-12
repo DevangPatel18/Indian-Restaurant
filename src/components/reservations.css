@@ -1,0 +1,26 @@
+.reservations {
+  background: url('../assets/wine-glass-dinner.jpg') center no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+.reservations-form {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.reservations-form-contact p {
+  padding-right: 2em;
+}
+
+.reservations-form-contact {
+  height: 400px;
+}
+
+form > * {
+  margin-bottom: 2em;
+}
+
+form p {
+  font-weight: bold;
+}

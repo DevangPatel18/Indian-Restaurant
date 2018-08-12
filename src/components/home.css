@@ -32,12 +32,12 @@
 
 .e { grid-area: e; }
 
-.reservations {
+.home-reservations {
   background: #800000;
   height: 330px;
 }
 
-.reservations .title {
+.home-reservations .title {
   margin-bottom: 3rem;
 }
 
