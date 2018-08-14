@@ -86,12 +86,12 @@
   flex-wrap: wrap;
 }
 
-.contact-container {
+.home-contact-container {
   flex-direction: row;
   padding: 2rem;
 }
 
-.contact-container .table {
+.home-contact-container .table {
   margin: 0 6rem;
 }
 
@@ -103,11 +103,11 @@
   text-align: center;
 }
 
-.contact-schedule td:first-of-type {
+.home-contact-schedule td:first-of-type {
   text-align: right;
 }
 
-.contact-info td:first-of-type {
+.home-contact-info td:first-of-type {
   font-size: 2rem;
   padding: 0;
 }
