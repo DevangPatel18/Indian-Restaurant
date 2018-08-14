@@ -1,25 +1,17 @@
-.home-contact-container {
-  flex-direction: row;
-  padding: 2rem;
+.contactinfo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.home-contact-container .table {
-  margin: 0 6rem;
+.contactinfo > div {
+  margin: 2em 4em;
 }
 
-.table td, .table th {
-  border: 0px solid white;
+.contactinfo-hours {
+  width: 24em;
 }
 
-.table th {
-  text-align: center;
-}
-
-.home-contact-schedule td:first-of-type {
-  text-align: right;
-}
-
-.home-contact-info td:first-of-type {
-  font-size: 2rem;
-  padding: 0;
+.contactinfo-hours-header {
+  margin-bottom: .5em;
 }

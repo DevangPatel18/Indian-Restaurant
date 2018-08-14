@@ -108,7 +108,7 @@ const Home = () => {
 
         <div className="container">
           <h2 className="title is-2 has-text-centered">We hope to see you soon!</h2>
-              <Contactinfo/>
+            <Contactinfo/>
 
             {/*<Map></Map>*/}
 
