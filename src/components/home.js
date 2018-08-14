@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 // import Map from './map.js';
 import './home.css';
 import downtown_to from '../assets/mark-jefferson-paraan-252931-unsplash.jpg';
+import Contactinfo from './contactinfo.js';
 
 const Home = () => {
   const serviceslist = [
@@ -107,51 +108,8 @@ const Home = () => {
 
         <div className="container">
           <h2 className="title is-2 has-text-centered">We hope to see you soon!</h2>
-            <div className="home-contact-container centercontent">
-              <table className="table home-contact-schedule">
-                <thead><tr><th colSpan="2">Hours</th></tr></thead>
-                <tbody>
-                  <tr>
-                    <td>Monday - Friday</td>
-                    <td>10am-11pm</td>
-                  </tr>
-                  <tr>
-                    <td>Saturday</td>
-                    <td>11am-9pm</td>
-                  </tr>
-                  <tr>
-                    <td>Sunday & Holidays</td>
-                    <td>12pm-8pm</td>
-                  </tr>
-                </tbody>
-              </table>
+              <Contactinfo/>
 
-              <table className="table contact-info">
-                <thead><tr><th colSpan="2">Contact info</th></tr></thead>
-                <tbody>
-                  <tr>
-                    <td><i className="fas fa-map-marked-alt"></i></td>
-                    <td>542 Nowaresville, Toronto, ON</td>
-                  </tr>
-
-                  <tr>
-                    <td><i className="fas fa-phone"></i></td>
-                    <td>999-999-999</td>
-                  </tr>
-
-                  <tr>
-                    <td><i className="far fa-envelope"></i></td>
-                    <td>support@indianrest.com</td>
-                  </tr>
-
-                  <tr>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-
-              </table>
-            </div>
             {/*<Map></Map>*/}
 
         </div>

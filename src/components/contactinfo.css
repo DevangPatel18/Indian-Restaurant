@@ -1,0 +1,25 @@
+.home-contact-container {
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.home-contact-container .table {
+  margin: 0 6rem;
+}
+
+.table td, .table th {
+  border: 0px solid white;
+}
+
+.table th {
+  text-align: center;
+}
+
+.home-contact-schedule td:first-of-type {
+  text-align: right;
+}
+
+.home-contact-info td:first-of-type {
+  font-size: 2rem;
+  padding: 0;
+}
