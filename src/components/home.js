@@ -103,12 +103,12 @@ const Home = () => {
       </section>
 
       {/*<Map></Map>*/}
-      <section className="contact">
+      <section className="home-contact">
 
         <div className="container">
           <h2 className="title is-2 has-text-centered">We hope to see you soon!</h2>
-            <div className="contact-container centercontent">
-              <table className="table contact-schedule">
+            <div className="home-contact-container centercontent">
+              <table className="table home-contact-schedule">
                 <thead><tr><th colSpan="2">Hours</th></tr></thead>
                 <tbody>
                   <tr>
