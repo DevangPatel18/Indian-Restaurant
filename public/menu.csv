@@ -3,14 +3,14 @@ Main,Biryani,Vegetable Biryani,"Saffron rice mixed with potatoes, peas, carrot, 
 Main,Biryani,Chicken Biryani,Saffron rice mixed with chicken and onions,5,7
 Main,Biryani,Beef Biryani,Saffron rice mixed with beef and tomatoes,5,7
 Main,Biryani,Mutton Biryani,Saffron rice mixed with mutton and chillies,7,9
-Main,Chicken,Chicken korma,Slow cooked creamy chicken,6,8
+Main,Chicken,Chicken Korma,Slow cooked creamy chicken,6,8
 Main,Chicken,Chicken Tikka Masala,Boneless spicy chicken curry,6,8
 Main,Chicken,Butter Chicken,Boneless creamy chicken curry,6,8
 Main,Chicken,Chicken Vindaloo,Spicy chicken curry,6,8
-Main,Chicken,Tandoori Chicken,Roasted chicken marinated in yogurt,6,8
+Main,Chicken,Tandoori Chicken,Roasted chicken marinated in spices,6,8
 Main,Vegetarian,Malai Kofta,Deep fried potato and paneer balls with onion tomato gravy,4,6
 Main,Vegetarian,Palak Paneer,Pureed spinach with cottage cheese,4,6
-Main,Vegetarian,Mutter Paneer,Peas and cottage cheese,4,6
+Main,Vegetarian,Mattar Paneer,Peas and cottage cheese,4,6
 Main,Vegan,Rajma,Red kidney bean curry,4,6
 Main,Vegan,Kaali Daal,Boiled lentils with onions and chillies,4,6
 Main,Vegan,Aaloo Paratha,Potato stuffed flatbread,4,6
@@ -30,11 +30,11 @@ Appetizer,Finger food,Pakoras,Deep fried small balls of potato and onion,3.5,0
 Appetizer,Finger food,Vegetable spring rolls,"Vegetable roll filled with carrot, cabbage, green beans",1.5,0
 Appetizer,Finger food,Chicken kebab,"Skewered chicken marinated with olive oil, lemon juice",4.5,0
 Appetizer,Finger food,Dhokla,Spongy square made from fermented batter of chickpeas,3.5,0
-Drinks,Drinks,Bottled Water,You need this to live,1,0
-Drinks,Drinks,Soft drink,You don't need this to live,1.5,0
+Drinks,Drinks,Water,Bottled spring water,1,0
+Drinks,Drinks,Soft drink,Assortment of popular sodas,1.5,0
 Drinks,Drinks,Fruit juice,"Assortment of orange, apple, and grape juice boxes ",1.5,0
 Dessert,Dessert,Gulab Jamun,Powered milk balls,3,0
-Dessert,Dessert,Shrikhand ,"Sweet pudding of yoghurt, sugar, almonds",3,0
+Dessert,Dessert,Shrikhand ,"Pudding of yoghurt, sugar, almonds",3,0
 Dessert,Dessert,Kaju Barfi,"Diamond shaped sweet of milk, sugar",3,0
 Dessert,Dessert,Laddu,"Ball shaped sweet of flour, butter, sugar",3,0
 Dessert,Dessert,Jalebi,Pretzel shaped sweet of deep fried flour soaked in sugar syrup,3,0
