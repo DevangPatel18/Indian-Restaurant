@@ -1,0 +1,32 @@
+.menu {
+  background: url('../assets/menu-background.jpg') center no-repeat;
+  background-size: cover;
+  height: 40vh;
+}
+
+.menu-item {
+  width: 24em;
+  padding: 2em 0;
+}
+
+.menu-container {
+  padding: 5em 0 4em;
+}
+
+.menu-item-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.menu-container > h2:first-child {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-container h2, .menu-container h3 {
+  padding: 1rem 0;
+}

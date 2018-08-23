@@ -1,0 +1,37 @@
+Category,Subcategory,Name,Description,Regular,Large
+Main,Biryani,Vegetable Biryani,"Saffron rice mixed with potatoes, peas, carrot, peppers, and cauliflower",4,6
+Main,Biryani,Chicken Biryani,Saffron rice mixed with chicken and onions,5,7
+Main,Biryani,Beef Biryani,Saffron rice mixed with beef and tomatoes,5,7
+Main,Biryani,Mutton Biryani,Saffron rice mixed with mutton and chillies,7,9
+Main,Chicken,Chicken Korma,Slow cooked creamy chicken,6,8
+Main,Chicken,Chicken Tikka Masala,Boneless spicy chicken curry,6,8
+Main,Chicken,Butter Chicken,Boneless creamy chicken curry,6,8
+Main,Chicken,Chicken Vindaloo,Spicy chicken curry,6,8
+Main,Chicken,Tandoori Chicken,Roasted chicken marinated in spices,6,8
+Main,Vegetarian,Malai Kofta,Deep fried potato and paneer balls with onion tomato gravy,4,6
+Main,Vegetarian,Palak Paneer,Pureed spinach with cottage cheese,4,6
+Main,Vegetarian,Mattar Paneer,Peas and cottage cheese,4,6
+Main,Vegan,Rajma,Red kidney bean curry,4,6
+Main,Vegan,Kaali Daal,Boiled lentils with onions and chillies,4,6
+Main,Vegan,Aaloo Paratha,Potato stuffed flatbread,4,6
+Main,Vegan,Hara Bhara Kabab,"Deep fried potato, pea, spinach patties",4,6
+Main,Vegan,Chana Masala,"Chickpea curry with onion, tomatoes, chillies",4,6
+Main,Beef,Beef Vindaloo,Spicy beef curry,6,8
+Main,Beef,Beef Masala,Boneless spicy beef curry,6,8
+Main,Beef,Beef Keema,Ground beef and potatoes,6,8
+Main,Beef,Nihari,Slow cooked beef stew,6,8
+Appetizer,Samosas,Vegetable Samosa,Deep fried pocket filled with potatoes and peas,3.5,0
+Appetizer,Samosas,Chicken Samosa,Deep fried pocket filled with chicken,5,0
+Appetizer,Samosas,Beef Samosa,Deep fried pocket filled with beef,5,0
+Appetizer,Naans,Regular Naan,Flatbread,1,0
+Appetizer,Naans,Butter Naan,Flatbread spread with butter,1.5,0
+Appetizer,Naans,Garlic Naan,Flatbread spread with garlic butter,1.5,0
+Appetizer,Finger food,Pakoras,Deep fried small balls of potato and onion,3.5,0
+Appetizer,Finger food,Vegetable spring rolls,"Vegetable roll filled with carrot, cabbage, green beans",1.5,0
+Appetizer,Finger food,Chicken kebab,"Skewered chicken marinated with olive oil, lemon juice",4.5,0
+Appetizer,Finger food,Dhokla,Spongy square made from fermented batter of chickpeas,3.5,0
+Dessert,Dessert,Gulab Jamun,Powered milk balls,3,0
+Dessert,Dessert,Shrikhand ,"Pudding of yoghurt, sugar, almonds",3,0
+Dessert,Dessert,Kaju Barfi,"Diamond shaped sweet of milk, sugar",3,0
+Dessert,Dessert,Laddu,"Ball shaped sweet of flour, butter, sugar",3,0
+Dessert,Dessert,Jalebi,Pretzel shaped sweet of deep fried flour soaked in sugar syrup,3,0
