@@ -27,31 +27,33 @@ class Menu extends Component {
           }
         });
 
+        foodhtml["Appetizers"] = food.filter(x => x.Category === "Appetizer");
         foodhtml["Biryani"] = food.filter(x => x.Subcategory === "Biryani");
         foodhtml["Vegan and Vegetarian"] = food.filter(x => x.Subcategory === "Vegan" || x.Subcategory === "Vegetarian");
         foodhtml["Chicken"] = food.filter(x => x.Subcategory === "Chicken");
         foodhtml["Beef"] = food.filter(x => x.Subcategory === "Beef");
-        foodhtml["Appetizers"] = food.filter(x => x.Category === "Appetizer");
-        foodhtml["Drinks and Desserts"] = food.filter(x => x.Category === "Drinks" || x.Category === "Dessert");
+        foodhtml["Dessert"] = food.filter(x => x.Category === "Dessert");
 
         Object.keys(foodhtml).forEach(section => {
           foodhtml[section] = foodhtml[section].map((item, i) => {
 
             let priceComponent;
+            let rgPrice = <span className="has-text-weight-semibold">${item.Regular}</span>
             if(item.Large !== "0") {
+              let lgPrice = <span className="has-text-weight-semibold">${item.Large}</span>
               priceComponent = 
                 <div className="level">
-                  <p className="level-item">Regular: ${item.Regular}</p>
-                  <p className="level-item">Large: ${item.Large}</p>
+                  <p className="level-item">Regular: {rgPrice}</p>
+                  <p className="level-item">Large: {lgPrice}</p>
                 </div>;
             } else {
-              priceComponent = <p>${item.Regular}</p>
+              priceComponent = <p>{rgPrice}</p>
             }
 
             return (
               <div key={i} className="has-text-centered menu-item">
-                <p className="is-size-5">{item.Name}</p>
-                <p className="is-italic">{item.Description}</p>
+                <p className="is-size-5 has-text-weight-semibold">{item.Name}</p>
+                <p className="has-text-grey">{item.Description}</p>
                 {priceComponent}
               </div>
             )
@@ -60,12 +62,23 @@ class Menu extends Component {
 
         let menuSections = Object.keys(foodhtml).map((sectionName, i) => {
           let header;
-          let headerType = sectionName === "Appetizers" || sectionName === "Drinks and Desserts" ? "main":"sub";
-          if(headerType === "sub") {
-            header = <h3 className="is-size-3 has-text-centered has-text-weight-normal has-text-grey">{sectionName}</h3>
+          let headerType = sectionName === "Appetizers" || sectionName === "Dessert" ? "main":"sub";
+          
+          if(sectionName === "Biryani") {
+            header = (
+              <div>
+                <h2 className="title is-2 has-text-centered ">Main Courses</h2>
+                <h3 className="is-size-3 has-text-centered has-text-weight-normal has-text-grey">{sectionName}</h3>
+              </div>
+            )
           } else {
-            header = <h2 className="is-size-2 has-text-centered ">{sectionName}</h2>
+            if(headerType === "sub") {
+              header = <h3 className="is-size-3 has-text-centered has-text-weight-normal has-text-grey">{sectionName}</h3>
+            } else {
+              header = <h2 className="title is-2 has-text-centered ">{sectionName}</h2>
+            }
           }
+
           return (
             <div key={i}>
               {header}
@@ -87,7 +100,6 @@ class Menu extends Component {
           <h1 className="has-text-light">Menu</h1>
         </header>
         <div className="menu-container">
-          <h2 className="is-size-2 has-text-centered">Main courses</h2>
           {this.state.menuSections}
         </div>
       </div>
