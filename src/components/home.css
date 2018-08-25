@@ -2,6 +2,7 @@
   background: url('../assets/home-background.jpg') center no-repeat;
   background-size: cover;
   height: 70vh;
+  position: relative;
 }
 
 .food-intro-text {
@@ -10,27 +11,56 @@
 
 .grid-container {
   display: grid;
-  grid-gap: 5px;
-  height: 100%;
+  grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "a c d" "b c d" "e e d";
+  grid-template-areas: "b a a" "c a a" "d d e";
 }
 
 .grid-container div{
-  background: beige;
   min-height: 200px;
+  position: relative;
 }
 
-.a { grid-area: a; }
+.a {
+  grid-area: a;
+  background: url("../assets/home/Chicken_Tikka_Masala_Curry.png") center no-repeat;
+  background-size: cover;
+}
 
-.b { grid-area: b; }
+.b {
+  grid-area: b;
+  background: url('../assets/home/Chanamasala.jpg') center no-repeat;
+  background-size: cover;
+}
 
-.c { grid-area: c; }
+.c {
+  grid-area: c;
+  background: url('../assets/home/indian-sweet-371357_1920.jpg') center no-repeat;
+  background-size: cover;
+}
 
-.d { grid-area: d; }
+.d {
+  grid-area: d;
+  background: url('../assets/home/Chicken_Biryani_in_Chennai.jpg') center no-repeat;
+  background-size: cover;
+}
 
-.e { grid-area: e; }
+.e {
+  grid-area: e;
+  background: url('../assets/home/Marro_Dhokla.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.image-credit {
+  color: white;
+  background: rgba(0,0,0,.7);
+  font-size: .6em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+}
 
 .home-reservations {
   background: #800000;

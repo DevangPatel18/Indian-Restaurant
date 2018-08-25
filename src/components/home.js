@@ -46,10 +46,13 @@ const Home = () => {
 
       <header className="main centercontent">
           <h1 className="has-text-light">Indian Restaurant</h1>
+          <p className="image-credit">
+            By Mohans1995 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Indian-Food-wikicont.jpg">from Wikimedia Commons</a>
+          </p>
       </header>
 
       <section className="food-intro container">
-        <div className="columns" style={{height:'600px'}}>
+        <div className="columns" style={{height:'auto'}}>
 
           <div className="food-intro-text column is-4">
             <h2 className="title is-2">Experience Indian cuisine!</h2>
@@ -59,16 +62,20 @@ const Home = () => {
           <div className="column">
             <div className="grid-container">
               <div className="a">
+              <p className="image-credit">By Sriyarao22 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Tikka_Masala_Curry.png">from Wikimedia Commons</a></p>
               </div>
               <div className="b">
+              <p className="image-credit">By Monali.mishra [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chanamasala.jpg">from Wikimedia Commons</a></p>
               </div>
               <div className="c">
               </div>
-              <div className="e">
-              </div>
               <div className="d">
+              <p className="image-credit">By Rupamdas75 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Biryani_in_Chennai.jpg">from Wikimedia Commons</a></p>
               </div>
-            </div>           
+              <div className="e">
+              <p className="image-credit">By Dhananjai11 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Marro_Dhokla.jpg">from Wikimedia Commons</a></p>
+              </div>
+            </div>
           </div>
 
         </div>
