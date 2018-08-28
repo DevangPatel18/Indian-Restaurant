@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "./about.css";
 import bulmaCarousel from 'bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js';
+import indianBuffet from '../assets/buffet-315691.jpg';
+import gauravPath from '../assets/640px-GauravPath1.jpg';
 
 class About extends Component {
   componentDidMount() {
@@ -24,11 +26,16 @@ class About extends Component {
                 Humble beginnings
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
-              <div style={{background: 'lavender', height:'400px'}}></div>
+              <div style={{background: 'lavender', height:'400px', position:'relative'}}>
+                <img src={gauravPath} className="location-intro-left-image" alt="Indian buffet"/>
+                <figcaption className="image-credit"><a href="https://en.wikipedia.org/wiki/User:Rahulogy" title="en:User:Rahulogy">Rahulogy</a> at <a href="http://en.wikipedia.org">en.wikipedia</a> [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0 </a> or <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>], <a href="https://commons.wikimedia.org/wiki/File:GauravPath1.jpg">from Wikimedia Commons</a></figcaption>
+              </div>
             </div>
 
             <div className="column is-two-fifths">
-              <div style={{background: 'thistle', height:'400px'}}></div>
+              <div style={{background: 'thistle', height:'400px', position:'relative'}}>
+                <img src={indianBuffet} className="location-intro-left-image" alt="Indian buffet"/>
+              </div>
               <p>Est laboris incididunt sit amet exercitation sed consequat reprehenderit dolor dolore anim elit cupidatat sit ea. Dolor tempor nulla velit veniam velit nulla elit exercitation amet quis dolore velit. </p>
 
             </div>
