@@ -53,13 +53,20 @@
 }
 
 .image-credit {
-  color: white;
-  background: rgba(0,0,0,.7);
-  font-size: .6em;
+  background: rgb(230,230,230);
+  font-size: .8em;
   position: absolute;
   bottom: 0;
   right: 0;
   margin: 0;
+  width: 100%;
+  font-weight: bold;
+  text-align: right;
+}
+
+.image-credit a {
+  color: black;
+  font-weight: normal;
 }
 
 .home-reservations {

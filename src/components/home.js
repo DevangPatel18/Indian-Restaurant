@@ -90,7 +90,7 @@ const Home = () => {
         <div className="location-intro">
           <div className="location-intro-left">
               <img src={downtown_to} className="location-intro-left-image" alt="Downtown Toronto"/>
-              <figcaption className="location-intro-left-image-caption">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
+              <figcaption className="image-credit">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
           </div>
           <div className="location-intro-right">
             <div>
