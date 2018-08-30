@@ -1,12 +1,3 @@
-.about {
-  background: url('../assets/about-background.jpg') center no-repeat;
-  background-size: cover;
-  height: 40vh;
-}
-
-.about .container {
-}
-
 .about-story .columns {
   max-width: 900px;
   margin: 0 auto;

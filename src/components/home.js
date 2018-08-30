@@ -4,6 +4,8 @@ import { NavLink } from 'react-router-dom';
 import './home.css';
 import downtown_to from '../assets/mark-jefferson-paraan-252931-unsplash.jpg';
 import Contactinfo from './contactinfo.js';
+import SectionHeader from './sectionHeader.js'
+import homeimage from '../assets/home-background.jpg'
 
 const Home = () => {
   const serviceslist = [
@@ -44,12 +46,12 @@ const Home = () => {
   return (
     <div>
 
-      <header className="main centercontent">
-          <h1 className="has-text-light">Indian Restaurant</h1>
-          <p className="image-credit">
-            By Mohans1995 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Indian-Food-wikicont.jpg">from Wikimedia Commons</a>
-          </p>
-      </header>
+      <SectionHeader
+        sectionName="Indian Restaurant"
+        url={homeimage}
+        height='70vh'
+        credit={<div>By Mohans1995 [<a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0 </a>] <a href='https://commons.wikimedia.org/wiki/File:Indian-Food-wikicont.jpg'>from Wikimedia Commons</a></div>}
+      />
 
       <section className="food-intro container">
         <div className="columns" style={{height:'auto'}}>

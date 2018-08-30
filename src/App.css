@@ -3,12 +3,18 @@ header h1 {
   text-shadow: .2rem .2rem 1rem black;
 }
 
-.centercontent {
+.sectionComponent {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  position: relative;
 }
+
+.sectionComponentBefore {
+  content: "";
+  display: block;
+  width: 100%;
+  filter: brightness(.5);
+} 
 
 section {
   padding: 5rem 0;

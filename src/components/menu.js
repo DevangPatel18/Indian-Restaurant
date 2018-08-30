@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './menu.css';
 import Papa from "papaparse";
+import SectionHeader from './sectionHeader.js'
+import menuImage from '../assets/menu-background.jpg'
 
 class Menu extends Component {
   constructor() {
@@ -96,9 +98,11 @@ class Menu extends Component {
   render() {
     return (
       <div>
-        <header className="menu centercontent">
-          <h1 className="has-text-light">Menu</h1>
-        </header>
+        <SectionHeader
+          sectionName="Menu"
+          url={menuImage}
+          height='40vh'
+        />
         <div className="menu-container">
           {this.state.menuSections}
         </div>
