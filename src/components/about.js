@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./about.css";
 import bulmaCarousel from 'bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js';
 import indianBuffet from '../assets/buffet-315691.jpg';
-import gauravPath from '../assets/640px-GauravPath1.jpg';
+import indianPlace from '../assets/delhi-1845004_640.jpg';
 import SectionHeader from './sectionHeader.js'
 import aboutImage from '../assets/about-background.jpg'
 
@@ -19,6 +19,7 @@ class About extends Component {
         sectionName="About"
         url={aboutImage}
         height='40vh'
+        credit={"Photo by Marta Branco from Pexels"}
       />
       <section className="about-story">
         <div className="container">
@@ -26,12 +27,11 @@ class About extends Component {
 
             <div className="column is-three-fifths">
               <h3 className="title is-3">
-                Humble beginnings
+                Journey from India
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
               <div style={{height:'400px', position:'relative'}}>
-                <img src={gauravPath} className="location-intro-left-image" alt="Indian buffet"/>
-                <figcaption className="image-credit"><a href="https://en.wikipedia.org/wiki/User:Rahulogy" title="en:User:Rahulogy">Rahulogy</a> at <a href="http://en.wikipedia.org">en.wikipedia</a> [<a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0 </a> or <a href="http://www.gnu.org/copyleft/fdl.html">GFDL</a>], <a href="https://commons.wikimedia.org/wiki/File:GauravPath1.jpg">from Wikimedia Commons</a></figcaption>
+                <img src={indianPlace} className="location-intro-left-image" alt="India location"/>
               </div>
             </div>
 

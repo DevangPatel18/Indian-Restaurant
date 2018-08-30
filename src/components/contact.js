@@ -11,6 +11,7 @@ const Contact = () => {
         sectionName="Contact"
         url={contactImage}
         height='40vh'
+        credit={"Photo by rawpixel.com from Pexels"}
       />
 
       <section className="contact-intro">
