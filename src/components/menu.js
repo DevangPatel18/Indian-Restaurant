@@ -103,8 +103,10 @@ class Menu extends Component {
           url={menuImage}
           height='40vh'
         />
-        <div className="menu-container">
-          {this.state.menuSections}
+        <div className="menu-outer">
+          <div className="menu-container">
+            {this.state.menuSections}
+          </div>
         </div>
       </div>
     )
