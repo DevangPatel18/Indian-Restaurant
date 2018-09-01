@@ -31,13 +31,13 @@ class About extends Component {
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
               <div style={{height:'400px', position:'relative'}}>
-                <img src={indianPlace} className="location-intro-left-image" alt="India location"/>
+                <img src={indianPlace} className="about-location-intro-left-image" alt="India location"/>
               </div>
             </div>
 
             <div className="column is-two-fifths">
               <div style={{height:'400px', position:'relative'}}>
-                <img src={indianBuffet} className="location-intro-left-image" alt="Indian buffet"/>
+                <img src={indianBuffet} className="about-location-intro-left-image" alt="Indian buffet"/>
               </div>
               <p>Est laboris incididunt sit amet exercitation sed consequat reprehenderit dolor dolore anim elit cupidatat sit ea. Dolor tempor nulla velit veniam velit nulla elit exercitation amet quis dolore velit. </p>
 
@@ -48,7 +48,7 @@ class About extends Component {
         </div>
       </section>
 
-      <section className="about-specialty" style={{background: 'maroon'}}>
+      <section className="about-specialty">
         <div className="container">
           <h3 className="title is-3 has-text-centered has-text-light">Our specialty</h3>
           <p className="has-text-centered has-text-light" style={{maxWidth: '40em', margin: '0 auto'}}>Ex laborum aute velit elit consequat tempor duis occaecat quis ad adipisicing quis irure in ullamco non in. Ut id dolor eiusmod proident labore consectetur aliqua velit dolor labore elit ex reprehenderit nulla anim. Aute excepteur aliqua laboris sit id nisi dolore exercitation eu est proident excepteur.</p>

@@ -7,7 +7,19 @@
   margin: 3rem 0;
 }
 
+.about-specialty {
+  background: hsla(290,50%,13%,.80);
+}
+
 .about-quote {
   max-width: 40em;
   margin: 0 auto;
+}
+
+.about-location-intro-left-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: sepia(70%);
 }
