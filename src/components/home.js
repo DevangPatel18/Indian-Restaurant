@@ -37,9 +37,9 @@ const Home = () => {
   ]
 
   let service_html = serviceslist.map((service, i) =>
-    <div key={i} style={{margin:"1rem"}}>
-      <i className={service.class + ' is-size-1'}></i>
-      <p style={{width: "8rem", paddingTop: "1rem"}}>{service.text}</p>
+    <div key={i} style={{margin:"1rem"}} className="service-div">
+      <i className={service.class + ' is-size-1 service-icon'}></i>
+      <p className="service-text" style={{width: "8rem", paddingTop: "1rem"}}>{service.text}</p>
     </div>
   );
 
@@ -57,8 +57,9 @@ const Home = () => {
         <div className="columns" style={{height:'auto'}}>
 
           <div className="food-intro-text column is-4">
-            <h2 className="title is-2">Experience Indian cuisine!</h2>
-            <p>Adipisicing elit et ea excepteur exercitation sunt culpa officia deserunt dolore cillum anim. Ad culpa aliqua aute magna proident culpa esse dolor ut irure cupidatat culpa. Lorem ipsum et aute ea dolor aliquip magna non aliquip sint sit ut occaecat.</p>
+            <h2 className="title is-2">A Taste of Indian cuisine!</h2>
+            <p>Adipisicing elit et ea excepteur exercitation sunt culpa officia deserunt dolore cillum anim. Ad culpa aliqua aute magna proident culpa esse dolor ut irure cupidatat culpa.</p>
+            <p>Lorem ipsum et aute ea dolor aliquip magna non aliquip sint sit ut occaecat. Consectetur mollit duis magna eiusmod deserunt et proident commodo dolore ut et minim non consequat in.</p>
           </div>
 
           <div className="column">
@@ -84,11 +85,14 @@ const Home = () => {
       </section>
 
       <section className="home-reservations has-text-centered">
+        <div className="home-reservations-text">
+          
         <h2 className="title is-2 has-text-centered has-text-light">Book a table to reserve a spot!</h2>
         <NavLink className="button is-outlined is-white is-medium is-rounded" to="/reservations">Make a Reservation</NavLink>
+        </div>
       </section>
 
-      <section className="location centercontent container">
+      <section className="location container">
         <div className="location-intro">
           <div className="location-intro-left">
               <img src={downtown_to} className="location-intro-left-image" alt="Downtown Toronto"/>

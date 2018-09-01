@@ -1,6 +1,14 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header h1 {
   font-size: 5rem;
   text-shadow: .2rem .2rem 1rem black;
+}
+
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
 }
 
 .sectionComponent {
