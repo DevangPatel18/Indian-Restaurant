@@ -75,7 +75,7 @@ class Reservations extends Component {
                   <Input/>
                 </div>
 
-                <Input value="Submit" type="submit" className="button is-success"/>
+                <button type="submit" className="custom-submit">Submit</button>
               </form>
             </Col>
 

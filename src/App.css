@@ -48,3 +48,24 @@ section {
 p {
   letter-spacing: 2px
 }
+
+.custom-submit {
+  background: none;
+  color: hsla(290,50%,13%,.8);
+  height: 3em;
+  font-size: 1.25em;
+  padding: 0 1em;
+  border: 1px solid hsla(290,50%,13%,.8);
+  border-radius: 4px;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.custom-submit:hover {
+  background: hsla(290,50%,13%,.8);
+  color: white;
+}
+
+.custom-submit:active {
+  background: hsla(290,50%,13%,.9);
+}
