@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "./about.css";
-import bulmaCarousel from 'bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js';
 import indianBuffet from '../assets/buffet-315691.jpg';
 import indianPlace from '../assets/delhi-1845004_640.jpg';
 import SectionHeader from './sectionHeader.js'
@@ -9,7 +8,8 @@ import aboutImage from '../assets/about-background.jpg'
 class About extends Component {
   componentDidMount() {
     // carousels now contains an array of all Carousel instances
-    var carousels = bulmaCarousel.attach();
+    var bulmaCarousel = require('bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js');
+    bulmaCarousel.attach();
   }
 
   render() {
