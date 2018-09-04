@@ -1,34 +1,44 @@
 import React, { Component } from 'react';
 import "./about.css";
-import bulmaCarousel from 'bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js';
+import indianBuffet from '../assets/buffet-315691.jpg';
+import indianPlace from '../assets/delhi-1845004_640.jpg';
+import SectionHeader from './sectionHeader.js'
+import aboutImage from '../assets/about-background.jpg'
 
 class About extends Component {
   componentDidMount() {
     // carousels now contains an array of all Carousel instances
-    var carousels = bulmaCarousel.attach();
+    var bulmaCarousel = require('bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js');
+    bulmaCarousel.attach();
   }
 
   render() {
     return (
     <div>
-      <header className="about centercontent">
-        <h1 className="has-text-light">Our Story</h1>
-      </header>
-
+      <SectionHeader
+        sectionName="About"
+        url={aboutImage}
+        height='40vh'
+        credit={"Photo by Marta Branco from Pexels"}
+      />
       <section className="about-story">
         <div className="container">
           <div className="columns is-6">
 
             <div className="column is-three-fifths">
               <h3 className="title is-3">
-                Humble beginnings
+                Journey from India
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
-              <div style={{background: 'lavender', height:'400px'}}></div>
+              <div style={{height:'400px', position:'relative'}}>
+                <img src={indianPlace} className="about-location-intro-left-image" alt="India location"/>
+              </div>
             </div>
 
             <div className="column is-two-fifths">
-              <div style={{background: 'thistle', height:'400px'}}></div>
+              <div style={{height:'400px', position:'relative'}}>
+                <img src={indianBuffet} className="about-location-intro-left-image" alt="Indian buffet"/>
+              </div>
               <p>Est laboris incididunt sit amet exercitation sed consequat reprehenderit dolor dolore anim elit cupidatat sit ea. Dolor tempor nulla velit veniam velit nulla elit exercitation amet quis dolore velit. </p>
 
             </div>
@@ -38,7 +48,7 @@ class About extends Component {
         </div>
       </section>
 
-      <section className="about-specialty" style={{background: 'maroon'}}>
+      <section className="about-specialty">
         <div className="container">
           <h3 className="title is-3 has-text-centered has-text-light">Our specialty</h3>
           <p className="has-text-centered has-text-light" style={{maxWidth: '40em', margin: '0 auto'}}>Ex laborum aute velit elit consequat tempor duis occaecat quis ad adipisicing quis irure in ullamco non in. Ut id dolor eiusmod proident labore consectetur aliqua velit dolor labore elit ex reprehenderit nulla anim. Aute excepteur aliqua laboris sit id nisi dolore exercitation eu est proident excepteur.</p>

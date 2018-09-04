@@ -1,13 +1,18 @@
 import React from 'react';
 import Contactinfo from './contactinfo.js';
 import "./contact.css";
+import SectionHeader from './sectionHeader.js'
+import contactImage from '../assets/contact-background.jpg'
 
 const Contact = () => {
   return (
     <div>
-      <header className="contact centercontent">
-        <h1 className="has-text-light">Contact</h1>
-      </header>
+      <SectionHeader
+        sectionName="Contact"
+        url={contactImage}
+        height='40vh'
+        credit={"Photo by rawpixel.com from Pexels"}
+      />
 
       <section className="contact-intro">
         <h3 className="title is-3 has-text-centered">Have a question? Feel free to ask!</h3>
@@ -50,7 +55,7 @@ const Contact = () => {
 
         <div className="contact-form columns">
           <div className="column">
-            <button className="button is-primary is-outlined">Submit</button>
+            <button className="custom-submit">Submit</button>
           </div>
         </div>
         </form>

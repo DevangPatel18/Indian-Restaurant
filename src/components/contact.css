@@ -1,9 +1,3 @@
-.contact {
-  background: url('../assets/contact-background.jpg') center no-repeat;
-  background-size: cover;
-  height: 40vh;
-}
-
 .contact-intro p {
   width: 40em;
   margin: auto;

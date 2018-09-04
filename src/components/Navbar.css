@@ -3,8 +3,45 @@
   text-decoration: none;
   font-size: 1.25rem;
   transition: .3s;
+  color: white;
 }
 
-.Nav_link:hover { transform: scale(1.2); }
+.Nav_link:visited { color: white; }
 
-.Nav_link:visited { color: #333333; }
+.navbar-logo {
+  width: 52px;
+  height: 52px;
+  margin: 0 .5em;
+}
+
+.navbar-burger {
+  color: white;
+}
+
+.navbar-burger:hover {
+  color: white;
+}
+
+.navbar {
+  background: hsl(290,50%,13%);
+}
+
+.navbar-menu {
+  background: hsl(290,50%,13%);
+  padding: 0;
+}
+
+.navbar-item:hover {
+  background: hsl(290,50%,0%);
+  transition: background .5s;
+}
+
+@media screen and (max-width: 1087px) {
+  .navbar-menu {
+    background: hsla(290,15%,68%,.46);
+  }
+
+  .navbar-item:hover {
+    background: hsla(290,15%,68%,.3);
+  }
+}

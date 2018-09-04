@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "./reservations.css";
 import { DatePicker, TimePicker, Input, InputNumber, Row, Col} from 'antd';
 import 'antd/dist/antd.css';
+import SectionHeader from './sectionHeader.js'
+import rsvImage from '../assets/wine-glass-dinner.jpg'
 
 class Reservations extends Component {
   constructor(props) {
@@ -14,9 +16,12 @@ class Reservations extends Component {
 
     return (
       <div>
-        <header className="reservations centercontent">
-          <h1 className="has-text-light">Reservations</h1>
-        </header>
+        <SectionHeader
+          sectionName="Reservations"
+          url={rsvImage}
+          height='40vh'
+          credit={"Photo by Sasha • Stories on Unsplash"}
+        />
 
         <section className="reservations-form">
           <Row gutter={16} type="flex" align="middle">
@@ -70,7 +75,7 @@ class Reservations extends Component {
                   <Input/>
                 </div>
 
-                <Input value="Submit" type="submit" className="button is-success"/>
+                <button type="submit" className="custom-submit">Submit</button>
               </form>
             </Col>
 

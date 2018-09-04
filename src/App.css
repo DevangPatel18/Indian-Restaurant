@@ -1,14 +1,28 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header h1 {
   font-size: 5rem;
   text-shadow: .2rem .2rem 1rem black;
 }
 
-.centercontent {
+h1, h2, h3 {
+  font-family: 'Cinzel', serif;
+}
+
+.sectionComponent {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  position: relative;
 }
+
+.sectionComponentBefore {
+  content: "";
+  display: block;
+  width: 100%;
+  filter: brightness(.5);
+} 
 
 section {
   padding: 5rem 0;
@@ -33,4 +47,25 @@ section {
 
 p {
   letter-spacing: 2px
+}
+
+.custom-submit {
+  background: none;
+  color: hsla(290,50%,13%,.8);
+  height: 3em;
+  font-size: 1.25em;
+  padding: 0 1em;
+  border: 1px solid hsla(290,50%,13%,.8);
+  border-radius: 4px;
+  transition: all .2s;
+  cursor: pointer;
+}
+
+.custom-submit:hover {
+  background: hsla(290,50%,13%,.8);
+  color: white;
+}
+
+.custom-submit:active {
+  background: hsla(290,50%,13%,.9);
 }
