@@ -2,8 +2,18 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+@media (min-width: 360px) {
+  .fluid-h1 {
+    font-size: calc(3rem + ((1vw - 3.6px) * 5.1282));
+  }
+}
+@media (min-width: 1920px) {
+  .fluid-h1 {
+    font-size: 128px;
+  }
+}
+
 header h1 {
-  font-size: 5rem;
   text-shadow: .2rem .2rem 1rem black;
 }
 
@@ -14,6 +24,7 @@ h1, h2, h3 {
 .sectionComponent {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
 }
 
