@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./reservations.css";
-import { DatePicker, TimePicker, Input, InputNumber, Row, Col} from 'antd';
+import { DatePicker, TimePicker, Input, InputNumber } from 'antd';
 import 'antd/dist/antd.css';
 import SectionHeader from './sectionHeader.js'
 import rsvImage from '../assets/wine-glass-dinner.jpg'
@@ -24,51 +24,49 @@ class Reservations extends Component {
         />
 
         <section className="reservations-form">
-          <Row gutter={16} type="flex" align="middle">
-            <Col span={8} className="reservations-form-contact">
-              <h3 className="title is-3">
-                Need further Accomodations?
+
+          <div className="columns">
+            <div className="column is-two-fifths reservations-form-padding">
+              <h3 className="title is-3 is-size-4-touch">
+                Need further Accommodations?
               </h3>
               <p>Occaecat voluptate mollit officia consectetur aliqua ullamco officia ad sit sit elit. Ex reprehenderit ut commodo laboris sunt sint nulla qui reprehenderit aute.</p>
               <p>Elit ullamco ex esse amet velit ex sunt sint adipisicing nulla qui velit adipisicing nostrud id officia cillum.</p>
+            </div>
 
-            </Col>
-
-            <Col span={16}>
+            <div className="column reservations-form-padding">
               <form action="post">
-                <Row gutter={16}>
-                  <Col span={8}>
+                <div className="columns is-mobile is-multiline">
+                  <div className="column">
                     <p>Reservation Date</p>
                     <DatePicker/>
-                  </Col>
+                  </div>
 
-                  <Col span={8}>
+                  <div className="column">
                     <p>Reservation Time</p>
                     <TimePicker use12Hours format="h:mm a"/>
-                  </Col>
+                  </div>
 
-                  <Col span={8}>
+                  <div className="column">
                     <p>Number of guests</p>
                     <InputNumber min={1} max={12} defaultValue={2}/>
-                  </Col>
-                </Row>
+                  </div>
 
-                <Row gutter={16}>
-                  <Col span={8}>
-                    <p>Name</p>
-                    <Input placeholder="--"/>
-                  </Col>
-
-                  <Col span={8}>
+                  <div className="column" style={{minWidth: "150px"}}>
                     <p>Phone Number</p>
                     <Input placeholder="(XXX) XXX-XXXX"/>
-                  </Col>
+                  </div>
 
-                  <Col span={8}>
+                  <div className="column " style={{minWidth: "280px"}}>
+                    <p>Name</p>
+                    <Input placeholder="--"/>
+                  </div>
+
+                  <div className="column " style={{minWidth: "280px"}}>
                     <p>Email</p>
                     <Input type="email" placeholder="--"/>
-                  </Col>
-                </Row>
+                  </div>
+                </div>
 
                 <div>
                   <p>Comments</p>
@@ -77,10 +75,9 @@ class Reservations extends Component {
 
                 <button type="submit" className="custom-submit">Submit</button>
               </form>
-            </Col>
+            </div>
 
-          </Row>
-
+          </div>
         </section>
       </div>
     )

@@ -3,12 +3,12 @@
   max-width: 1000px;
 }
 
-.reservations-form-contact p {
-  padding-right: 2em;
+.reservations-form-padding {
+  padding: 0 2em;
 }
 
-.reservations-form-contact {
-  height: 400px;
+form {
+  margin:0;
 }
 
 form > * {
@@ -29,13 +29,4 @@ form p {
   border-radius: 4px;
   transition: all .2s;
   cursor: pointer;
-}
-
-.reservations-submit:hover {
-  background: hsla(290,50%,13%,.8);
-  color: white;
-}
-
-.reservations-submit:active {
-  background: hsla(290,50%,13%,.9);
 }

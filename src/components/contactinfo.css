@@ -1,17 +1,34 @@
 .contactinfo {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .contactinfo > div {
-  margin: 2em 4em;
+  /*margin: 0em 3em;*/
 }
 
 .contactinfo-hours {
   width: 24em;
 }
 
+.contactinfo-contact {
+  width: 16em;
+}
+
 .contactinfo-hours-header {
   margin-bottom: .5em;
+}
+
+.contactinfo-hours .column, .contactinfo-contact .column {
+  padding: .25rem;
+}
+
+@media (max-width: 580px) {
+  .contactinfo {
+    flex-wrap: wrap;
+  }
+
+  .contactinfo > div {
+    margin: 1em 1.7em;
+  }
 }

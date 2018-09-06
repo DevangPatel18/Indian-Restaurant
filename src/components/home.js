@@ -37,8 +37,8 @@ const Home = () => {
   ]
 
   let service_html = serviceslist.map((service, i) =>
-    <div key={i} style={{margin:"1rem"}} className="service-div">
-      <i className={service.class + ' is-size-1 service-icon'}></i>
+    <div key={i} className="service-div">
+      <i className={service.class + ' is-size-1 is-size-3-mobile service-icon'}></i>
       <p className="service-text" style={{width: "8rem", paddingTop: "1rem"}}>{service.text}</p>
     </div>
   );
@@ -57,7 +57,7 @@ const Home = () => {
         <div className="columns" style={{height:'auto'}}>
 
           <div className="food-intro-text column is-4">
-            <h2 className="title is-2">A Taste of Indian cuisine!</h2>
+            <h2 className="title is-2 is-size-4-mobile">A Taste of Indian cuisine!</h2>
             <p>Adipisicing elit et ea excepteur exercitation sunt culpa officia deserunt dolore cillum anim. Ad culpa aliqua aute magna proident culpa esse dolor ut irure cupidatat culpa.</p>
             <p>Lorem ipsum et aute ea dolor aliquip magna non aliquip sint sit ut occaecat. Consectetur mollit duis magna eiusmod deserunt et proident commodo dolore ut et minim non consequat in.</p>
           </div>
@@ -87,8 +87,8 @@ const Home = () => {
       <section className="home-reservations has-text-centered">
         <div className="home-reservations-text">
           
-        <h2 className="title is-2 has-text-centered has-text-light">Book a table to reserve a spot!</h2>
-        <NavLink className="button is-outlined is-white is-medium is-rounded" to="/reservations">Make a Reservation</NavLink>
+        <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Book a table to reserve a spot!</h2>
+        <NavLink className="button is-outlined is-white is-medium is-rounded is-size-6-mobile" to="/reservations">Make a Reservation</NavLink>
         </div>
       </section>
 
@@ -100,7 +100,7 @@ const Home = () => {
           </div>
           <div className="location-intro-right">
             <div>
-              <h2 className="title is-2">Located in downtown Toronto</h2>
+              <h2 className="title is-2 is-size-4-mobile">Located in downtown Toronto</h2>
               <p>Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>
             </div>
           </div>
@@ -109,7 +109,7 @@ const Home = () => {
 
       <section className="services has-text-centered">
         <div className="container">
-          <h2 className="title is-2 has-text-centered has-text-light">Our full services</h2>
+          <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Our full services</h2>
           <div className="services-tiles has-text-light">
             {service_html}
           </div>
@@ -120,7 +120,7 @@ const Home = () => {
       <section className="home-contact">
 
         <div className="container">
-          <h2 className="title is-2 has-text-centered">We hope to see you soon!</h2>
+          <h2 className="title is-2 is-size-4-mobile has-text-centered">We hope to see you soon!</h2>
             <Contactinfo/>
 
             {/*<Map></Map>*/}

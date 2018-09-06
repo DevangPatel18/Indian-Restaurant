@@ -7,19 +7,25 @@ const SectionHeader = (props) => {
 
   return (
 
-    <header className="sectionComponent centercontent">
+    <header className="sectionComponent"
+      style={{
+        height: `${ props.height }`
+      }}
+    >
       <div key={props.name} className="sectionComponentBefore"
         style={{
+          position: 'absolute',
           background: `url(${ props.url }) center no-repeat`,
           backgroundSize: 'cover',
-          height: `${ props.height}`
+          height: `${ props.height }`,
+          zIndex: "0"
         }}
       ></div>    
       <h1
-        className="has-text-light"
+        className="has-text-light fluid-h1"
         style={{
-          position: 'absolute',
-          top: '35%'
+          zIndex: "1",
+          textAlign: "center"
         }}
       >{ props.sectionName }</h1>
       { credit }
