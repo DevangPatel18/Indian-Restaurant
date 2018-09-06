@@ -11,15 +11,35 @@
   background: hsla(290,50%,13%,.80);
 }
 
+.about-specialty p, .carousel-item p {
+  padding: 0 3em;
+}
+
 .about-quote {
   max-width: 40em;
   margin: 0 auto;
 }
 
 .about-location-intro-left-image {
-  position: absolute;
+  position: relative;
   height: 100%;
+  max-height: 400px;
   width: 100%;
   object-fit: cover;
-  filter: sepia(70%);
+  filter: saturate(60%);
+}
+
+@media (min-width: 769px) {
+  .about-location-intro-left-image {
+    height: 400px;
+  }
+}
+
+.about-testimonials {
+  padding-bottom: 3em;
+}
+
+.about-carousel {
+  max-width: 700px;
+  margin: 0 auto;
 }
