@@ -15,12 +15,12 @@ const Contact = () => {
       />
 
       <section className="contact-intro">
-        <h3 className="title is-3 has-text-centered">Have a question? Feel free to ask!</h3>
+        <h3 className="title is-3 is-size-4-mobile has-text-centered">Have a question? Feel free to ask!</h3>
         
         <p>Nisi aute eiusmod veniam laboris commodo veniam eu incididunt excepteur nisi esse tempor veniam. Pariatur exercitation nulla amet esse voluptate et anim excepteur veniam quis eiusmod.</p>
 
         <form action="">
-        <div className="contact-form columns">
+        <div className="contact-form columns is-mobile">
 
           <div className="column">
             <label className="label" htmlFor="name">
