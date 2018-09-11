@@ -27,6 +27,8 @@ const SectionHeader = (props) => {
           zIndex: "1",
           textAlign: "center"
         }}
+        data-aos="fade-down"
+        data-aos-duration="1500"
       >{ props.sectionName }</h1>
       { credit }
     </header>

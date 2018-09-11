@@ -11,8 +11,13 @@ import Reservations from './components/reservations.js';
 import Error from './components/error.js';
 import Navbar from './components/Navbar.js';
 import Footer from './components/footer.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 class App extends Component {
+  componentDidMount() {
+    AOS.init()
+  }
   render() {
     return (
       <BrowserRouter>

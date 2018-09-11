@@ -94,11 +94,19 @@ const Home = () => {
 
       <section className="location container">
         <div className="location-intro">
-          <div className="location-intro-left">
+          <div className="location-intro-left"
+            data-aos="slide-right"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
               <img src={downtown_to} className="location-intro-left-image" alt="Downtown Toronto"/>
               <figcaption className="image-credit">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
           </div>
-          <div className="location-intro-right">
+          <div className="location-intro-right"
+            data-aos="slide-up"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
             <div>
               <h2 className="title is-2 is-size-4-mobile">Located in downtown Toronto</h2>
               <p>Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>

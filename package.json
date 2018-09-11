@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "antd": "^3.8.0",
+    "aos": "^2.3.3",
     "bulma": "^0.7.1",
     "bulma-extensions": "^2.2.1",
     "papaparse": "^4.6.0",
