@@ -30,11 +30,11 @@ class About extends Component {
                 Journey from India
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
-              <img src={indianPlace} className="about-location-intro-left-image" alt="India location"/>
+              <img src={indianPlace} className="about-location-intro-left-image" alt="India location" data-aos="fade-right" data-aos-duration="1000"/>
             </div>
 
             <div className="column is-two-fifths">
-              <img src={indianBuffet} className="about-location-intro-left-image" alt="Indian buffet"/>
+              <img src={indianBuffet} className="about-location-intro-left-image" alt="Indian buffet" data-aos="fade-left" data-aos-duration="1000"/>
               <p>Est laboris incididunt sit amet exercitation sed consequat reprehenderit dolor dolore anim elit cupidatat sit ea. Dolor tempor nulla velit veniam velit nulla elit exercitation amet quis dolore velit. </p>
             </div>
 
