@@ -54,7 +54,7 @@ const Home = () => {
       />
 
       <section className="food-intro container">
-        <div className="columns" style={{height:'auto'}}>
+        <div className="columns is-gapless" style={{height:'auto'}}>
 
           <div className="food-intro-text column is-4">
             <h2 className="title is-2 is-size-4-mobile">A Taste of Indian cuisine!</h2>
