@@ -73,7 +73,7 @@ class Reservations extends Component {
                   <Input/>
                 </div>
 
-                <button type="submit" className="custom-submit">Submit</button>
+                <button type="submit" className="button is-primary is-medium is-outlined">Submit</button>
               </form>
             </div>
 

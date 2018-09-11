@@ -55,7 +55,7 @@ const Contact = () => {
 
         <div className="contact-form columns">
           <div className="column">
-            <button className="custom-submit">Submit</button>
+            <button className="button is-primary is-medium is-outlined">Submit</button>
           </div>
         </div>
         </form>
