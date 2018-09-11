@@ -44,7 +44,7 @@ section {
   display: block;
   margin-top: 1.5rem;
   width: 100px;
-  border: 1px solid black;
+  border: 1px solid #841515;
 }
 
 .title.has-text-centered:after {

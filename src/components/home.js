@@ -88,7 +88,7 @@ const Home = () => {
         <div className="home-reservations-text">
           
         <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Book a table to reserve a spot!</h2>
-        <NavLink className="button is-outlined is-white is-medium is-rounded is-size-6-mobile" to="/reservations">Make a Reservation</NavLink>
+        <NavLink className="button is-outlined is-danger is-medium is-rounded is-size-6-mobile" to="/reservations">Make a Reservation</NavLink>
         </div>
       </section>
 
