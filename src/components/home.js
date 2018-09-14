@@ -5,7 +5,7 @@ import './home.css';
 import downtown_to from '../assets/mark-jefferson-paraan-252931-unsplash.jpg';
 import Contactinfo from './contactinfo.js';
 import SectionHeader from './sectionHeader.js'
-import homeimage from '../assets/home-background.jpg'
+import imgLinks from '../assets/imgLinks.js'
 
 const Home = () => {
   const serviceslist = [
@@ -48,7 +48,7 @@ const Home = () => {
 
       <SectionHeader
         sectionName="Indian Restaurant"
-        url={homeimage}
+        images={imgLinks.home}
         height='70vh'
         credit={<div>By Mohans1995 [<a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0 </a>] <a href='https://commons.wikimedia.org/wiki/File:Indian-Food-wikicont.jpg'>from Wikimedia Commons</a></div>}
       />
