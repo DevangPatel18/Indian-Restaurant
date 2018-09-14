@@ -2,14 +2,14 @@ import React from 'react';
 import Contactinfo from './contactinfo.js';
 import "./contact.css";
 import SectionHeader from './sectionHeader.js'
-import contactImage from '../assets/contact-background.jpg'
+import imgLinks from '../assets/imgLinks.js'
 
 const Contact = () => {
   return (
     <div>
       <SectionHeader
         sectionName="Contact"
-        url={contactImage}
+        images={imgLinks.contact}
         height='40vh'
         credit={"Photo by rawpixel.com from Pexels"}
       />

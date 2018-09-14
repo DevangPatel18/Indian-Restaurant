@@ -3,7 +3,7 @@ import "./about.css";
 import indianBuffet from '../assets/buffet-315691.jpg';
 import indianPlace from '../assets/delhi-1845004_640.jpg';
 import SectionHeader from './sectionHeader.js'
-import aboutImage from '../assets/about-background.jpg'
+import imgLinks from '../assets/imgLinks.js'
 
 class About extends Component {
   componentDidMount() {
@@ -17,7 +17,7 @@ class About extends Component {
     <div>
       <SectionHeader
         sectionName="About"
-        url={aboutImage}
+        images={imgLinks.about}
         height='40vh'
         credit={"Photo by Marta Branco from Pexels"}
       />

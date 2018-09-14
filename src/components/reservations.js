@@ -3,7 +3,7 @@ import "./reservations.css";
 import { DatePicker, TimePicker, Input, InputNumber } from 'antd';
 import 'antd/dist/antd.css';
 import SectionHeader from './sectionHeader.js'
-import rsvImage from '../assets/wine-glass-dinner.jpg'
+import imgLinks from '../assets/imgLinks.js'
 
 class Reservations extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class Reservations extends Component {
       <div>
         <SectionHeader
           sectionName="Reservations"
-          url={rsvImage}
+          images={imgLinks.reservations}
           height='40vh'
           credit={"Photo by Sasha • Stories on Unsplash"}
         />
