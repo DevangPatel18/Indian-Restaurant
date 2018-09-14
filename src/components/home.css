@@ -30,31 +30,31 @@
 
 .a {
   grid-area: a;
-  background: url("../assets/home/Chicken_Tikka_Masala_Curry.png") center no-repeat;
+  background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Tikka_Masala_Curry.png") center no-repeat;
   background-size: cover;
 }
 
 .b {
   grid-area: b;
-  background: url('../assets/home/Chanamasala.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889069/Indian%20Restaurant/home%20food%20grid/Chanamasala.jpg') center no-repeat;
   background-size: cover;
 }
 
 .c {
   grid-area: c;
-  background: url('../assets/home/indian-sweet-371357_1920.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/indian-sweet-371357_1920.jpg') center no-repeat;
   background-size: cover;
 }
 
 .d {
   grid-area: d;
-  background: url('../assets/home/Chicken_Biryani_in_Chennai.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Biryani_in_Chennai.jpg') center no-repeat;
   background-size: cover;
 }
 
 .e {
   grid-area: e;
-  background: url('../assets/home/Marro_Dhokla.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Marro_Dhokla.jpg') center no-repeat;
   background-size: cover;
 }
 

@@ -2,10 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 // import Map from './map.js';
 import './home.css';
-import downtown_to from '../assets/mark-jefferson-paraan-252931-unsplash.jpg';
 import Contactinfo from './contactinfo.js';
 import SectionHeader from './sectionHeader.js'
 import imgLinks from '../assets/imgLinks.js'
+const downtown_to = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889151/Indian%20Restaurant/mark-jefferson-paraan-252931-unsplash.jpg';
 
 const Home = () => {
   const serviceslist = [

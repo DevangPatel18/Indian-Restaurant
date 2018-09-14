@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "./about.css";
-import indianBuffet from '../assets/buffet-315691.jpg';
-import indianPlace from '../assets/delhi-1845004_640.jpg';
 import SectionHeader from './sectionHeader.js'
 import imgLinks from '../assets/imgLinks.js'
+const indianBuffet = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/buffet-315691.jpg';
+const indianPlace = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/delhi-1845004_640.jpg';
 
 class About extends Component {
   componentDidMount() {
