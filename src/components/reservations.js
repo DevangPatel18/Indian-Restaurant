@@ -25,7 +25,7 @@ class Reservations extends Component {
 
         <section className="reservations-form">
 
-          <div className="columns">
+          <div className="columns is-gapless">
             <div className="column is-two-fifths reservations-form-padding">
               <h3 className="title is-3 is-size-4-touch">
                 Need further Accommodations?

@@ -3,8 +3,8 @@
   max-width: 1000px;
 }
 
-.reservations-form-padding {
-  padding: 0 2em;
+.reservations-form-padding > * {
+  padding: 0 16px;
 }
 
 form {
