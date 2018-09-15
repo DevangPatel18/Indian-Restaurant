@@ -12,17 +12,17 @@ const Home = () => {
     {
       type:"wifi",
       class:"fas fa-wifi",
-      text:"Free wifi"
+      text:"Free hi-speed wifi"
     },
     {
       type:"cash",
       class:"fas fa-money-bill",
-      text:"Accept cash and debit"
+      text:"Accept cash and debit payment"
     },
     {
       type:"credit",
       class:"far fa-credit-card",
-      text:"Accept most credit cards (Visa/Mastercard)"
+      text:"Take Visa, Mastercard, and others"
     },
     {
       type:"parking",
@@ -39,7 +39,7 @@ const Home = () => {
   let service_html = serviceslist.map((service, i) =>
     <div key={i} className="service-div">
       <i className={service.class + ' is-size-1 is-size-3-mobile service-icon'}></i>
-      <p className="service-text" style={{width: "8rem", paddingTop: "1rem"}}>{service.text}</p>
+      <p className="service-text">{service.text}</p>
     </div>
   );
 

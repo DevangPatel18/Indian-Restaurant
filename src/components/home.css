@@ -142,7 +142,39 @@
 }
 
 .services {
-  background: hsla(290,50%,13%,.80);
+  background: hsla(290,50%,13%,.5);
+  position: relative;
+}
+
+.services:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_640.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: saturate(0) brightness(1) contrast(.1)
+}
+
+@media (min-width: 640px) {
+  .services:before {
+    background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1280.jpg") center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services:before {
+    background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1920.jpg") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.services .title.is-2 {
+  padding-bottom: 1.25em
 }
 
 .services-tiles {
@@ -152,31 +184,49 @@
 }
 
 .service-div {
-  width: 180px;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 1rem;
+  position: relative;
+}
 
+.service-div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+  opacity: .8;
 }
 
 .service-icon {
   color: darkgray;
-  padding: 1rem;
   width: 100%;
+  height: 55%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-text {
-  color: white;
+  color: black;
+  z-index: 0;
+  width: 100%;
+  padding: 0 1rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .service-div {
     width: 140px;
-    margin: .25rem;
-  }
-
-  .service-icon {
-    padding: 0rem;
+    height: 140px;
+    margin: .8rem;
+    font-size: .8em;
   }
 }
