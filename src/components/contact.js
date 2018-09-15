@@ -2,14 +2,14 @@ import React from 'react';
 import Contactinfo from './contactinfo.js';
 import "./contact.css";
 import SectionHeader from './sectionHeader.js'
-import contactImage from '../assets/contact-background.jpg'
+import imgLinks from '../assets/imgLinks.js'
 
 const Contact = () => {
   return (
     <div>
       <SectionHeader
         sectionName="Contact"
-        url={contactImage}
+        images={imgLinks.contact}
         height='40vh'
         credit={"Photo by rawpixel.com from Pexels"}
       />
@@ -55,7 +55,7 @@ const Contact = () => {
 
         <div className="contact-form columns">
           <div className="column">
-            <button className="custom-submit">Submit</button>
+            <button className="button is-primary is-medium is-outlined">Submit</button>
           </div>
         </div>
         </form>

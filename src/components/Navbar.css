@@ -1,9 +1,17 @@
-.Nav_link {
+.navbar-item .Nav_link {
   outline: none;
   text-decoration: none;
   font-size: 1.25rem;
   transition: .3s;
   color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0.7rem 0.75rem 0.4rem;
+}
+
+.Nav_link:focus {
+  text-decoration: none;
 }
 
 .Nav_link:visited { color: white; }
@@ -14,11 +22,7 @@
   margin: 0 .5em;
 }
 
-.navbar-burger {
-  color: white;
-}
-
-.navbar-burger:hover {
+.navbar-burger, .navbar-burger:hover {
   color: white;
 }
 
@@ -27,18 +31,38 @@
 }
 
 .navbar-menu {
-  background: hsl(290,50%,13%);
+  padding: 0;
+  transition: all 0.3s;
+  z-index: 1;
+  height: 0;
+}
+
+.navbar-menu-open {
+  height: 243px;
+}
+
+@media (min-width: 1088px) {
+  .navbar-menu {
+    height: auto;
+  }
+}
+
+.navbar-item {
   padding: 0;
 }
 
-.navbar-item:hover {
-  background: hsl(290,50%,0%);
+.navbar-item:hover, .navbar-item .Nav_link.active {
+  background: hsla(290,15%,68%,.46);
   transition: background .5s;
 }
 
-@media screen and (max-width: 1087px) {
+@media (max-width: 1087px) {
   .navbar-menu {
     background: hsla(290,15%,68%,.46);
+  }
+
+  .navbar-item {
+    border-bottom: 1px solid hsl(290,50%,13%);
   }
 
   .navbar-item:hover {

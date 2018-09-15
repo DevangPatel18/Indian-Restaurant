@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <nav className="navbar is-fixed-top">
       <div className="navbar-brand">
-        <img src={logo} alt="" className="navbar-logo"/>
+        <NavLink className="Nav_link" to="/" exact={true}><img src={logo} alt="" className="navbar-logo"/></NavLink>
         <a role="button" className="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -16,8 +16,8 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <div className="navbar-menu" id="navMenu">
-          <div className="navbar-item"><NavLink className="Nav_link" to="/">Home</NavLink></div>
+        <div className="navbar-menu is-active" id="navMenu" style={{overflow:"hidden"}}>
+          <div className="navbar-item"><NavLink className="Nav_link" to="/" exact={true}>Home</NavLink></div>
           <div className="navbar-item"><NavLink className="Nav_link" to="/menu">Menu</NavLink></div>
           <div className="navbar-item"><NavLink className="Nav_link" to="/about">About</NavLink></div>
           <div className="navbar-item"><NavLink className="Nav_link" to="/reservations">Reservations</NavLink></div>

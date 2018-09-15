@@ -25,10 +25,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         el.classList.toggle('is-active');
-        $target.classList.toggle('is-active');
+        $target.classList.toggle('navbar-menu-open');
 
       });
     });
   }
-  
+
+  // Collapse mobile menu after clicking link
+  const button = document.querySelector('.navbar-burger')
+  const menu = document.querySelector('.navbar-menu')
+
+  document.querySelectorAll('.navbar-item').forEach(x => x.addEventListener('click', () => {
+    if (button.classList.contains("is-active")) {
+      button.classList.toggle("is-active");
+      menu.classList.toggle("navbar-menu-open");
+    }
+  }))
 });

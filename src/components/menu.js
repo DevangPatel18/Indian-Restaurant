@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './menu.css';
 import Papa from "papaparse";
 import SectionHeader from './sectionHeader.js'
-import menuImage from '../assets/menu-background.jpg'
+import imgLinks from '../assets/imgLinks.js'
 
 class Menu extends Component {
   constructor() {
@@ -100,7 +100,7 @@ class Menu extends Component {
       <div>
         <SectionHeader
           sectionName="Menu"
-          url={menuImage}
+          images={imgLinks.menu}
           height='40vh'
         />
         <div className="menu-outer">

@@ -2,8 +2,8 @@
   max-width: 980px;
 }
 
-.food-intro-text {
-  padding-right: 3rem;
+.food-intro-text > * {
+  padding: 0 3rem 0 1rem;
 }
 
 .grid-container {
@@ -30,31 +30,31 @@
 
 .a {
   grid-area: a;
-  background: url("../assets/home/Chicken_Tikka_Masala_Curry.png") center no-repeat;
+  background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Tikka_Masala_Curry.png") center no-repeat;
   background-size: cover;
 }
 
 .b {
   grid-area: b;
-  background: url('../assets/home/Chanamasala.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889069/Indian%20Restaurant/home%20food%20grid/Chanamasala.jpg') center no-repeat;
   background-size: cover;
 }
 
 .c {
   grid-area: c;
-  background: url('../assets/home/indian-sweet-371357_1920.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/indian-sweet-371357_1920.jpg') center no-repeat;
   background-size: cover;
 }
 
 .d {
   grid-area: d;
-  background: url('../assets/home/Chicken_Biryani_in_Chennai.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Biryani_in_Chennai.jpg') center no-repeat;
   background-size: cover;
 }
 
 .e {
   grid-area: e;
-  background: url('../assets/home/Marro_Dhokla.jpg') center no-repeat;
+  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Marro_Dhokla.jpg') center no-repeat;
   background-size: cover;
 }
 
@@ -76,8 +76,8 @@
 }
 
 .home-reservations {
-  background-color: #343434;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23000000' fill-opacity='0.52' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: #1c1c1c;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
 }
 
 .home-reservations .title {
@@ -142,7 +142,39 @@
 }
 
 .services {
-  background: hsla(290,50%,13%,.80);
+  background: hsla(290,50%,13%,.5);
+  position: relative;
+}
+
+.services:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_640.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  filter: saturate(0) brightness(1) contrast(.1)
+}
+
+@media (min-width: 640px) {
+  .services:before {
+    background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1280.jpg") center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1280px) {
+  .services:before {
+    background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1920.jpg") center no-repeat;
+    background-size: cover;
+  }
+}
+
+.services .title.is-2 {
+  padding-bottom: 1.25em
 }
 
 .services-tiles {
@@ -152,31 +184,49 @@
 }
 
 .service-div {
-  width: 180px;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-start;
   margin: 1rem;
+  position: relative;
+}
 
+.service-div:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: white;
+  opacity: .8;
 }
 
 .service-icon {
   color: darkgray;
-  padding: 1rem;
   width: 100%;
+  height: 55%;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-text {
-  color: white;
+  color: black;
+  z-index: 0;
+  width: 100%;
+  padding: 0 1rem;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .service-div {
     width: 140px;
-    margin: .25rem;
-  }
-
-  .service-icon {
-    padding: 0rem;
+    height: 140px;
+    margin: .8rem;
+    font-size: .8em;
   }
 }

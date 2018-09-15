@@ -2,27 +2,27 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 // import Map from './map.js';
 import './home.css';
-import downtown_to from '../assets/mark-jefferson-paraan-252931-unsplash.jpg';
 import Contactinfo from './contactinfo.js';
 import SectionHeader from './sectionHeader.js'
-import homeimage from '../assets/home-background.jpg'
+import imgLinks from '../assets/imgLinks.js'
+const downtown_to = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889151/Indian%20Restaurant/mark-jefferson-paraan-252931-unsplash.jpg';
 
 const Home = () => {
   const serviceslist = [
     {
       type:"wifi",
       class:"fas fa-wifi",
-      text:"Free wifi"
+      text:"Free hi-speed wifi"
     },
     {
       type:"cash",
       class:"fas fa-money-bill",
-      text:"Accept cash and debit"
+      text:"Accept cash and debit payment"
     },
     {
       type:"credit",
       class:"far fa-credit-card",
-      text:"Accept most credit cards (Visa/Mastercard)"
+      text:"Take Visa, Mastercard, and others"
     },
     {
       type:"parking",
@@ -39,7 +39,7 @@ const Home = () => {
   let service_html = serviceslist.map((service, i) =>
     <div key={i} className="service-div">
       <i className={service.class + ' is-size-1 is-size-3-mobile service-icon'}></i>
-      <p className="service-text" style={{width: "8rem", paddingTop: "1rem"}}>{service.text}</p>
+      <p className="service-text">{service.text}</p>
     </div>
   );
 
@@ -48,13 +48,13 @@ const Home = () => {
 
       <SectionHeader
         sectionName="Indian Restaurant"
-        url={homeimage}
+        images={imgLinks.home}
         height='70vh'
         credit={<div>By Mohans1995 [<a href='https://creativecommons.org/licenses/by-sa/4.0'>CC BY-SA 4.0 </a>] <a href='https://commons.wikimedia.org/wiki/File:Indian-Food-wikicont.jpg'>from Wikimedia Commons</a></div>}
       />
 
       <section className="food-intro container">
-        <div className="columns" style={{height:'auto'}}>
+        <div className="columns is-gapless" style={{height:'auto'}}>
 
           <div className="food-intro-text column is-4">
             <h2 className="title is-2 is-size-4-mobile">A Taste of Indian cuisine!</h2>
@@ -88,17 +88,25 @@ const Home = () => {
         <div className="home-reservations-text">
           
         <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Book a table to reserve a spot!</h2>
-        <NavLink className="button is-outlined is-white is-medium is-rounded is-size-6-mobile" to="/reservations">Make a Reservation</NavLink>
+        <NavLink className="button is-outlined is-danger is-medium is-rounded is-size-6-mobile" to="/reservations">Make a Reservation</NavLink>
         </div>
       </section>
 
       <section className="location container">
         <div className="location-intro">
-          <div className="location-intro-left">
+          <div className="location-intro-left"
+            data-aos="slide-right"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
               <img src={downtown_to} className="location-intro-left-image" alt="Downtown Toronto"/>
               <figcaption className="image-credit">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
           </div>
-          <div className="location-intro-right">
+          <div className="location-intro-right"
+            data-aos="slide-up"
+            data-aos-duration="700"
+            data-aos-once="true"
+          >
             <div>
               <h2 className="title is-2 is-size-4-mobile">Located in downtown Toronto</h2>
               <p>Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>

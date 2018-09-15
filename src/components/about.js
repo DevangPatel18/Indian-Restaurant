@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import "./about.css";
-import indianBuffet from '../assets/buffet-315691.jpg';
-import indianPlace from '../assets/delhi-1845004_640.jpg';
 import SectionHeader from './sectionHeader.js'
-import aboutImage from '../assets/about-background.jpg'
+import imgLinks from '../assets/imgLinks.js'
+const indianBuffet = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/buffet-315691.jpg';
+const indianPlace = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/delhi-1845004_640.jpg';
 
 class About extends Component {
   componentDidMount() {
@@ -17,11 +17,11 @@ class About extends Component {
     <div>
       <SectionHeader
         sectionName="About"
-        url={aboutImage}
+        images={imgLinks.about}
         height='40vh'
         credit={"Photo by Marta Branco from Pexels"}
       />
-      <section className="about-story">
+      <section className="about-story" style={{overflowX: "hidden"}}>
         <div className="container">
           <div className="columns is-6">
 
@@ -30,11 +30,11 @@ class About extends Component {
                 Journey from India
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
-              <img src={indianPlace} className="about-location-intro-left-image" alt="India location"/>
+              <img src={indianPlace} className="about-location-intro-left-image" alt="India location" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"/>
             </div>
 
             <div className="column is-two-fifths">
-              <img src={indianBuffet} className="about-location-intro-left-image" alt="Indian buffet"/>
+              <img src={indianBuffet} className="about-location-intro-left-image" alt="Indian buffet" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"/>
               <p>Est laboris incididunt sit amet exercitation sed consequat reprehenderit dolor dolore anim elit cupidatat sit ea. Dolor tempor nulla velit veniam velit nulla elit exercitation amet quis dolore velit. </p>
             </div>
 
