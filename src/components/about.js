@@ -10,6 +10,10 @@ class About extends Component {
     // carousels now contains an array of all Carousel instances
     var bulmaCarousel = require('bulma-extensions/bulma-carousel/dist/js/bulma-carousel.min.js');
     bulmaCarousel.attach();
+
+    document.title = "Story from Delhi to TO, and our customers"
+    document.querySelector('meta[name="Description"]')
+      .setAttribute("content", "A brief passage on how we started, where we are today, and what our customers think about us.");
   }
 
   render() {

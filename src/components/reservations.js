@@ -6,10 +6,10 @@ import SectionHeader from './sectionHeader.js'
 import imgLinks from '../assets/imgLinks.js'
 
 class Reservations extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
+  componentDidMount() {
+    document.title = "Reserve a spot as early as today!"
+    document.querySelector('meta[name="Description"]')
+      .setAttribute("content", "Make a reservation through our simple automated system. If further accommodations are needed we'll do our best to improve your visit.")
   }
 
   render() {
