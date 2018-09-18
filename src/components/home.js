@@ -109,7 +109,7 @@ const Home = () => {
           >
             <div>
               <h2 className="title is-2 is-size-4-mobile">Located in downtown Toronto</h2>
-              <p>Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>
+              <p className="has-text-dark">Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>
             </div>
           </div>
         </div>
