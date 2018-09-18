@@ -5,7 +5,7 @@ import './home.css';
 import Contactinfo from './contactinfo.js';
 import SectionHeader from './sectionHeader.js'
 import imgLinks from '../assets/imgLinks.js'
-const downtown_to = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889151/Indian%20Restaurant/mark-jefferson-paraan-252931-unsplash.jpg';
+const downtown_to = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537293989/Indian%20Restaurant/mark-jefferson-paraan-252931-unsplash.jpg';
 
 class Home extends Component {
   constructor() {
