@@ -81,18 +81,18 @@ class Home extends Component {
 
           <div className="column">
             <div className="grid-container">
-              <div className="a">
+              <div className="lazyImage a">
               <p className="image-credit">By Sriyarao22 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Tikka_Masala_Curry.png">from Wikimedia Commons</a></p>
               </div>
-              <div className="b">
+              <div className="lazyImage b">
               <p className="image-credit">By Monali.mishra [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chanamasala.jpg">from Wikimedia Commons</a></p>
               </div>
-              <div className="c">
+              <div className="lazyImage c">
               </div>
-              <div className="d">
+              <div className="lazyImage d">
               <p className="image-credit">By Rupamdas75 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Biryani_in_Chennai.jpg">from Wikimedia Commons</a></p>
               </div>
-              <div className="e">
+              <div className="lazyImage e">
               <p className="image-credit">By Dhananjai11 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Marro_Dhokla.jpg">from Wikimedia Commons</a></p>
               </div>
             </div>
@@ -116,7 +116,7 @@ class Home extends Component {
             data-aos-duration="700"
             data-aos-once="true"
           >
-              <img src={downtown_to} className="location-intro-left-image" alt="Downtown Toronto"/>
+              <img src={downtown_to} className="lazyImage location-intro-left-image" alt="Downtown Toronto"/>
               <figcaption className="image-credit">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
           </div>
           <div className="location-intro-right"
