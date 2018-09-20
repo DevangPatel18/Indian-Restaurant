@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#000000">
+    <meta name="Description" content="Dine on Indian cuisine in downtown Toronto! Serve a variety of vegan, vegetarian, and meat dishes catering to all diets and customers alike.">
     <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/pwa-192x192.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Montserrat" rel="stylesheet">
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=api_key"></script> -->
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -22,7 +21,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Indian Restaurant</title>
+    <title>Indian Restaurant in the core of Toronto</title>
   </head>
   <body>
     <noscript>
@@ -39,5 +38,17 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <script type="text/javascript">
+    (function() {
+      var faIcons = document.createElement('link');
+      faIcons.href = 'https://use.fontawesome.com/releases/v5.2.0/css/all.css';
+      faIcons.rel = 'stylesheet';
+      var gFonts = document.createElement('link');
+      gFonts.href = 'https://fonts.googleapis.com/css?family=Cinzel|Montserrat'
+      gFonts.rel = 'stylesheet';
+      document.getElementsByTagName('head')[0].appendChild(faIcons);
+      document.getElementsByTagName('head')[0].appendChild(gFonts);
+    })();
+  </script>
   </body>
 </html>
