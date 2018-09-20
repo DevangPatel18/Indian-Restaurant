@@ -115,7 +115,8 @@
 
 .location-intro-right {
   position: relative;
-  background: rgb(230,230,230);
+  background: rgb(240,240,240);
+  color: black;
   width: 45%;
   height: 600px;
   display: flex;
@@ -210,7 +211,6 @@
   width: 100%;
   height: 55%;
   z-index: 0;
-  display: flex;
   align-items: center;
   justify-content: center;
 }

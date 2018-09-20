@@ -52,10 +52,10 @@ class Home extends Component {
   }
 
   render() {
-
+    // Set display flex inlined for i tag to supercede FontAwesome's inline-block class
     let service_html = this.state.serviceslist.map((service, i) =>
       <div key={i} className="service-div">
-        <i className={service.class + ' is-size-1 is-size-3-mobile service-icon'}></i>
+        <i className={service.class + ' is-size-1 is-size-3-mobile service-icon'} style={{display: 'flex'}}></i>
         <p className="service-text">{service.text}</p>
       </div>
     );
@@ -126,7 +126,7 @@ class Home extends Component {
           >
             <div>
               <h2 className="title is-2 is-size-4-mobile">Located in downtown Toronto</h2>
-              <p className="has-text-dark">Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>
+              <p>Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>
             </div>
           </div>
         </div>
