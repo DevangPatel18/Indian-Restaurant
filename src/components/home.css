@@ -156,7 +156,7 @@
   background-size: cover;
   width: 100%;
   height: 100%;
-  filter: saturate(0) brightness(1) contrast(.1)
+  filter: saturate(0) brightness(1) contrast(.3)
 }
 
 @media (min-width: 640px) {
@@ -202,11 +202,11 @@
   height: 100%;
   border-radius: 50%;
   background: white;
-  opacity: .8;
+  opacity: .4;
 }
 
 .service-icon {
-  color: darkgray;
+  color: white;
   width: 100%;
   height: 55%;
   z-index: 0;
@@ -216,10 +216,11 @@
 }
 
 .service-text {
-  color: black;
+  color: white;
   z-index: 0;
   width: 100%;
   padding: 0 1rem;
+  font-size: 1.1em;
 }
 
 @media (max-width: 768px) {
@@ -229,4 +230,8 @@
     margin: .8rem;
     font-size: .8em;
   }
+}
+
+.home-contact .container .is-2 {
+  margin-bottom: 5rem
 }

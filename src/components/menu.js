@@ -13,6 +13,9 @@ class Menu extends Component {
   }
 
   componentDidMount() {
+    document.title = "Menu catering to all diets and customers"
+    document.querySelector('meta[name="Description"]')
+      .setAttribute("content", "Serve a variety of plant based meals with potatoes, beans, spinach, and lentils, and also chicken and beef dishes in biryani, vindaloo, and korma options.");
 
     fetch('menu.csv')
       .then(response => response.text())
