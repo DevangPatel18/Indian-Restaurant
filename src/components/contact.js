@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Contactinfo from './contactinfo.js';
 import "./contact.css";
 import SectionHeader from './sectionHeader.js'
 import imgLinks from '../assets/imgLinks.js'
 
-const Contact = () => {
-  return (
+class Contact extends Component {
+  componentDidMount() {
+    document.title = "Get in touch with us!"
+    document.querySelector('meta[name="Description"]')
+      .setAttribute("content", "Contact us via phone, email, message from the website, or drop by if near downtown Toronto.")
+  }
+  
+  render() {
+    return (
     <div>
       <SectionHeader
         sectionName="Contact"
@@ -68,6 +75,7 @@ const Contact = () => {
 
     </div>
   )
+  }
 }
 
 export default Contact;
