@@ -16,7 +16,7 @@
     "react-emotion": "^9.2.8",
     "react-google-maps": "^9.4.5",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
+    "react-scripts": "2.0.3",
     "vanilla-lazyload": "^8.15.2"
   },
   "scripts": {
@@ -28,5 +28,11 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
