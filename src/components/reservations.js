@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "./reservations.css";
 import { DatePicker, TimePicker, Input, InputNumber } from 'antd';
 import 'antd/dist/antd.css';
-import SectionHeader from './sectionHeader.js'
+import PageHeader from './pageHeader.js'
 import imgLinks from '../assets/imgLinks.js'
 
 class Reservations extends Component {
@@ -16,7 +16,7 @@ class Reservations extends Component {
 
     return (
       <div>
-        <SectionHeader
+        <PageHeader
           sectionName="Reservations"
           images={imgLinks.reservations}
           height='40vh'

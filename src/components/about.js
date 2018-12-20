@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./about.css";
-import SectionHeader from './sectionHeader.js'
+import PageHeader from './pageHeader.js'
 import imgLinks from '../assets/imgLinks.js'
 const indianBuffet = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/buffet-315691.jpg';
 const indianPlace = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/delhi-1845004_640.jpg';
@@ -19,7 +19,7 @@ class About extends Component {
   render() {
     return (
     <div>
-      <SectionHeader
+      <PageHeader
         sectionName="About"
         images={imgLinks.about}
         height='40vh'

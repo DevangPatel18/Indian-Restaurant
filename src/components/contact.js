@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Contactinfo from './contactinfo.js';
 import "./contact.css";
-import SectionHeader from './sectionHeader.js'
+import PageHeader from './pageHeader.js'
 import imgLinks from '../assets/imgLinks.js'
 
 class Contact extends Component {
@@ -14,7 +14,7 @@ class Contact extends Component {
   render() {
     return (
     <div>
-      <SectionHeader
+      <PageHeader
         sectionName="Contact"
         images={imgLinks.contact}
         height='40vh'

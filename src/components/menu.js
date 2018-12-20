@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './menu.css';
 import Papa from "papaparse";
-import SectionHeader from './sectionHeader.js'
+import PageHeader from './pageHeader.js'
 import imgLinks from '../assets/imgLinks.js'
 
 class Menu extends Component {
@@ -101,7 +101,7 @@ class Menu extends Component {
   render() {
     return (
       <div>
-        <SectionHeader
+        <PageHeader
           sectionName="Menu"
           images={imgLinks.menu}
           height='40vh'

@@ -2,7 +2,7 @@ import React from 'react';
 import { css } from 'react-emotion';
 import '../App.css';
 
-const SectionHeader = (props) => {
+const PageHeader = (props) => {
 
   const mediaQ = props.images ? props.images.map(
     links => `@media (min-width: ${links.width}px){
@@ -49,4 +49,4 @@ const SectionHeader = (props) => {
   )
 }
 
-export default SectionHeader
+export default PageHeader
