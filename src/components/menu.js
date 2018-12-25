@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './menu.css';
 import Papa from "papaparse";
 import PageHeader from './pageHeader.js'
+import SectionDivider from './SectionDivider'
 import imgLinks from '../assets/imgLinks.js'
 
 class Menu extends Component {
@@ -72,7 +73,9 @@ class Menu extends Component {
           if(sectionName === "Biryani") {
             header = (
               <div>
-                <h2 className="title is-2 is-size-4-mobile has-text-centered ">Main Courses</h2>
+                <h2 className="title is-2 is-size-4-mobile has-text-centered ">Main Courses
+                  <SectionDivider type="menu" center/>
+                </h2>
                 <h3 className="is-size-3 is-size-5-mobile has-text-centered has-text-weight-bold has-text-grey">{sectionName}</h3>
               </div>
             )
@@ -80,7 +83,9 @@ class Menu extends Component {
             if(headerType === "sub") {
               header = <h3 className="is-size-3 is-size-5-mobile has-text-centered has-text-weight-bold has-text-grey">{sectionName}</h3>
             } else {
-              header = <h2 className="title is-2 is-size-4-mobile has-text-centered ">{sectionName}</h2>
+              header = <h2 className="title is-2 is-size-4-mobile has-text-centered ">{sectionName}
+                <SectionDivider type="menu" center/>
+              </h2>
             }
           }
 

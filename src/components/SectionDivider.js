@@ -1,12 +1,16 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { ReactComponent as Section } from '../assets/section_divider.svg';
+import { ReactComponent as Menu } from '../assets/menu_divider.svg';
 
 const DividerStyles = (type, accentColor, baseColor) => {
   let DividerType;
   switch (type) {
     case 'section':
       DividerType = Section;
+      break;
+    case 'menu':
+      DividerType = Menu;
       break;
     default:
   }
