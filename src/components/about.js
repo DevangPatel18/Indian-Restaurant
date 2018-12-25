@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./about.css";
 import PageHeader from './pageHeader.js'
 import imgLinks from '../assets/imgLinks.js'
+import SectionDivider from './SectionDivider'
 const indianBuffet = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/buffet-315691.jpg';
 const indianPlace = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889150/Indian%20Restaurant/delhi-1845004_640.jpg';
 
@@ -32,6 +33,7 @@ class About extends Component {
             <div className="column is-three-fifths">
               <h3 className="title is-3 is-size-4-mobile">
                 Journey from India
+                <SectionDivider type="section" />
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
               <img src={indianPlace} className="lazyImage about-location-intro-left-image" alt="India location" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"/>
@@ -49,14 +51,18 @@ class About extends Component {
 
       <section className="about-specialty">
         <div className="container">
-          <h3 className="title is-3 is-size-4-mobile has-text-centered has-text-light">Our specialty</h3>
+          <h3 className="title is-3 is-size-4-mobile has-text-centered has-text-light">Our specialty
+            <SectionDivider type="section" baseColor="white" accentColor="white" center />
+          </h3>
           <p className="has-text-centered has-text-light" style={{maxWidth: '40em', margin: '0 auto'}}>Ex laborum aute velit elit consequat tempor duis occaecat quis ad adipisicing quis irure in ullamco non in. Ut id dolor eiusmod proident labore consectetur aliqua velit dolor labore elit ex reprehenderit nulla anim. Aute excepteur aliqua laboris sit id nisi dolore exercitation eu est proident excepteur.</p>
         </div>
       </section>
 
       <section className="about-testimonials">
         <div className="container">
-          <h3 className="title is-3 is-size-4-mobile has-text-centered">What our customers say</h3>
+          <h3 className="title is-3 is-size-4-mobile has-text-centered">What our customers say
+            <SectionDivider type="section" baseColor="black" accentColor="hsla(290,50%,13%,.80)" center />
+          </h3>
 
           <div className='carousel carousel-animated carousel-animate-slide about-carousel'>
             <div className='carousel-container'>
