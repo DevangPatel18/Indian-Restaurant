@@ -69,3 +69,35 @@
     background: hsla(290,15%,68%,.3);
   }
 }
+
+.navbar-storeInfo {
+  width: 100%;
+  margin: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  font-size: .9em;
+}
+
+.navbar-storeInfo-items {
+  margin: 0 1rem;
+}
+
+@media (max-width: 650px) {
+  .navbar-storeInfo {
+    font-size: 0.65em;
+  }
+
+  .navbar-storeInfo-items {
+    margin: 0 5px;
+  }
+}
+
+@media (min-width: 1088px) {
+  .navbar-storeInfo {
+    width: calc(100vw - 460px - 80px - 2rem);
+    justify-content: center;
+  }  
+}

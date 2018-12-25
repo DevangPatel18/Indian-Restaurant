@@ -48,7 +48,7 @@ const SectionDividerStyles = styled.div`
 `;
 
 const SectionDivider = props => {
-  const { type, accentColor, baseColor, center } = props;
+  const { type, accentColor, baseColor } = props;
   const Divider = DividerStyles(type, accentColor, baseColor);
 
   return (
