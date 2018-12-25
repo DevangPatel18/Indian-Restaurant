@@ -5,6 +5,7 @@ import './home.css';
 import Contactinfo from './contactinfo.js';
 import PageHeader from './pageHeader.js'
 import imgLinks from '../assets/imgLinks.js'
+import SectionDivider from './SectionDivider'
 const downtown_to = 'https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537293989/Indian%20Restaurant/mark-jefferson-paraan-252931-unsplash.jpg';
 
 class Home extends Component {
@@ -74,7 +75,9 @@ class Home extends Component {
         <div className="columns is-gapless" style={{height:'auto'}}>
 
           <div className="food-intro-text column is-4">
-            <h2 className="title is-2 is-size-4-mobile">A Taste of Indian cuisine!</h2>
+            <h2 className="title is-2 is-size-4-mobile">A Taste of Indian cuisine!
+              <SectionDivider type='section' />
+            </h2>
             <p>Adipisicing elit et ea excepteur exercitation sunt culpa officia deserunt dolore cillum anim. Ad culpa aliqua aute magna proident culpa esse dolor ut irure cupidatat culpa.</p>
             <p>Lorem ipsum et aute ea dolor aliquip magna non aliquip sint sit ut occaecat. Consectetur mollit duis magna eiusmod deserunt et proident commodo dolore ut et minim non consequat in.</p>
           </div>
@@ -104,7 +107,9 @@ class Home extends Component {
       <section className="home-reservations has-text-centered">
         <div className="home-reservations-text">
           
-        <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Book a table to reserve a spot!</h2>
+        <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Book a table to reserve a spot!
+          <SectionDivider type='section' accentColor='white' baseColor='white' center />
+        </h2>
         <NavLink className="button is-outlined is-danger is-medium is-rounded is-size-6-mobile" to="/reservations">Make a Reservation</NavLink>
         </div>
       </section>
@@ -125,7 +130,9 @@ class Home extends Component {
             data-aos-once="true"
           >
             <div>
-              <h2 className="title is-2 is-size-4-mobile">Located in downtown Toronto</h2>
+              <h2 className="title is-2 is-size-4-mobile">Located in downtown Toronto
+                <SectionDivider type='section' />
+              </h2>
               <p>Dolor duis commodo cupidatat cillum voluptate ex dolor nulla id in aute laboris magna sint do occaecat non. Reprehenderit pariatur do esse dolore duis est eu esse voluptate aliquip proident ea esse.</p>
             </div>
           </div>
@@ -134,7 +141,9 @@ class Home extends Component {
 
       <section className="services has-text-centered">
         <div className="container">
-          <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Our full services</h2>
+          <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Our full services
+            <SectionDivider type='section' accentColor='white' baseColor='white' center />
+          </h2>
           <div className="services-tiles has-text-light">
             {service_html}
           </div>
@@ -145,7 +154,9 @@ class Home extends Component {
       <section className="home-contact">
 
         <div className="container">
-          <h2 className="title is-2 is-size-4-mobile has-text-centered">We hope to see you soon!</h2>
+          <h2 className="title is-2 is-size-4-mobile has-text-centered">We hope to see you soon!
+            <SectionDivider type='section' accentColor='gray' baseColor='black' center />
+          </h2>
             <Contactinfo/>
 
             {/*<Map></Map>*/}

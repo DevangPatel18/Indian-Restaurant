@@ -39,21 +39,9 @@ section {
   padding: 5rem 0;
 }
 
-.title.is-2:after, .title.is-3:after {
-  content: ' ';
-  display: block;
-  margin-top: 1.5rem;
-  width: 100px;
-  border: 1px solid #841515;
-}
-
 .title.has-text-centered:after {
   margin: 0 auto;
   margin-top: 1.5rem;
-}
-
-.title.has-text-light:after {
-  border: 1px solid white;
 }
 
 p {
