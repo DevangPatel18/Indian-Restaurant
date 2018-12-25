@@ -155,7 +155,7 @@ class Home extends Component {
 
         <div className="container">
           <h2 className="title is-2 is-size-4-mobile has-text-centered">We hope to see you soon!
-            <SectionDivider type='section' accentColor='gray' baseColor='black' center />
+            <SectionDivider type='section' center />
           </h2>
             <Contactinfo/>
 

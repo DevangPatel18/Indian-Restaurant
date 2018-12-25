@@ -30,7 +30,7 @@ class Reservations extends Component {
             <div className="column is-two-fifths reservations-form-padding">
               <h3 className="title is-3 is-size-4-touch">
                 Need further Accommodations?
-                <SectionDivider type="section" accentColor="#6c5370"/>
+                <SectionDivider type="section" />
               </h3>
               <p>Occaecat voluptate mollit officia consectetur aliqua ullamco officia ad sit sit elit. Ex reprehenderit ut commodo laboris sunt sint nulla qui reprehenderit aute.</p>
               <p>Elit ullamco ex esse amet velit ex sunt sint adipisicing nulla qui velit adipisicing nostrud id officia cillum.</p>

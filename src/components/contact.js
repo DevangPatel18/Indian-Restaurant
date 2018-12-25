@@ -24,7 +24,7 @@ class Contact extends Component {
 
       <section className="contact-intro">
         <h3 className="title is-3 is-size-4-mobile has-text-centered">Have a question? Feel free to ask!
-          <SectionDivider type="section" accentColor="#6c5370" center/>
+          <SectionDivider type="section" center/>
         </h3>
         
         <p>Nisi aute eiusmod veniam laboris commodo veniam eu incididunt excepteur nisi esse tempor veniam. Pariatur exercitation nulla amet esse voluptate et anim excepteur veniam quis eiusmod.</p>

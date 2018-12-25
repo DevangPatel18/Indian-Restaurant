@@ -61,7 +61,7 @@ class About extends Component {
       <section className="about-testimonials">
         <div className="container">
           <h3 className="title is-3 is-size-4-mobile has-text-centered">What our customers say
-            <SectionDivider type="section" baseColor="black" accentColor="hsla(290,50%,13%,.80)" center />
+            <SectionDivider type="section" baseColor="black" center />
           </h3>
 
           <div className='carousel carousel-animated carousel-animate-slide about-carousel'>
