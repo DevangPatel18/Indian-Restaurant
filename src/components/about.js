@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LazyLoad from 'react-lazyload';
 import "./about.css";
 import PageHeader from './pageHeader.js'
 import imgLinks from '../assets/imgLinks.js'
@@ -36,11 +37,15 @@ class About extends Component {
                 <SectionDivider type="section" />
               </h3>
               <p>Consectetur sint ut ex nostrud nisi et minim irure. Sed mollit commodo amet ullamco dolor exercitation id aliquip officia irure in excepteur ea. Consequat non do exercitation dolore excepteur amet in adipisicing nulla.</p>
-              <img src={indianPlace} className="lazyImage about-location-intro-left-image" alt="India location" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"/>
+              <LazyLoad>
+                <img src={indianPlace} className="about-location-intro-left-image" alt="India location" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true"/>
+              </LazyLoad>
             </div>
 
             <div className="column is-two-fifths">
-              <img src={indianBuffet} className="lazyImage about-location-intro-left-image" alt="Indian buffet" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"/>
+              <LazyLoad>
+                <img src={indianBuffet} className="about-location-intro-left-image" alt="Indian buffet" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"/>
+              </LazyLoad>
               <p>Est laboris incididunt sit amet exercitation sed consequat reprehenderit dolor dolore anim elit cupidatat sit ea. Dolor tempor nulla velit veniam velit nulla elit exercitation amet quis dolore velit. </p>
             </div>
 
