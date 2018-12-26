@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import LazyLoad from 'react-lazyload';
 // import Map from './map.js';
 import './home.css';
 import Contactinfo from './contactinfo.js';
@@ -84,18 +85,33 @@ class Home extends Component {
 
           <div className="column">
             <div className="grid-container">
-              <div className="lazyImage a">
-              <p className="image-credit">By Sriyarao22 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Tikka_Masala_Curry.png">from Wikimedia Commons</a></p>
+              <div className="grid-container-images a">
+                <LazyLoad>
+                  <img src="https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Tikka_Masala_Curry.png" alt="Chicken_Tikka_Masala_Curry"/>
+                </LazyLoad>
+                <p className="image-credit">By Sriyarao22 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Tikka_Masala_Curry.png">from Wikimedia Commons</a></p>
               </div>
-              <div className="lazyImage b">
-              <p className="image-credit">By Monali.mishra [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chanamasala.jpg">from Wikimedia Commons</a></p>
+              <div className="grid-container-images b">
+                <LazyLoad>
+                  <img src="https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889069/Indian%20Restaurant/home%20food%20grid/Chanamasala.jpg" alt="Chanamasala"/>
+                </LazyLoad>
+                <p className="image-credit">By Monali.mishra [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chanamasala.jpg">from Wikimedia Commons</a></p>
               </div>
-              <div className="lazyImage c">
+              <div className="grid-container-images c">
+                <LazyLoad>
+                  <img src="https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/indian-sweet-371357_1920.jpg" alt="indian-sweet"/>
+                </LazyLoad>
               </div>
-              <div className="lazyImage d">
-              <p className="image-credit">By Rupamdas75 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Biryani_in_Chennai.jpg">from Wikimedia Commons</a></p>
+              <div className="grid-container-images d">
+                <LazyLoad>
+                  <img src="https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Biryani_in_Chennai.jpg" alt="Chicken_Biryani_in_Chennai"/>
+                </LazyLoad>
+                <p className="image-credit">By Rupamdas75 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Chicken_Biryani_in_Chennai.jpg">from Wikimedia Commons</a></p>
               </div>
-              <div className="lazyImage e">
+              <div className="grid-container-images e">
+                <LazyLoad>
+                  <img src="https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Marro_Dhokla.jpg" alt=""/>
+                </LazyLoad>
               <p className="image-credit">By Dhananjai11 [<a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0 </a>], <a href="https://commons.wikimedia.org/wiki/File:Marro_Dhokla.jpg">from Wikimedia Commons</a></p>
               </div>
             </div>
@@ -121,8 +137,10 @@ class Home extends Component {
             data-aos-duration="700"
             data-aos-once="true"
           >
-              <img src={downtown_to} className="lazyImage location-intro-left-image" alt="Downtown Toronto"/>
-              <figcaption className="image-credit">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
+            <LazyLoad>
+              <img src={downtown_to} className="location-intro-left-image" alt="Downtown Toronto"/>
+            </LazyLoad>
+            <figcaption className="image-credit">Photo by Mark Jefferson Paraan on Unsplash</figcaption>
           </div>
           <div className="location-intro-right"
             data-aos="slide-up"
@@ -140,6 +158,15 @@ class Home extends Component {
       </section>
 
       <section className="services has-text-centered">
+        <LazyLoad>
+          <img srcset="https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_640.jpg 640w,
+                       https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1280.jpg 1280w,
+                       https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1920.jpg 1920w"
+               sizes="(max-width: 640px) 640px,
+                      (max-width: 1280px) 1280px,
+                      1920px"
+            src="https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1920.jpg" alt="restaurant table"/>
+        </LazyLoad>
         <div className="container">
           <h2 className="title is-2 is-size-4-mobile has-text-centered has-text-light">Our full services
             <SectionDivider type='section' accentColor='white' baseColor='white' center />

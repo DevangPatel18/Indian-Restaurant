@@ -14,13 +14,10 @@ import Footer from './components/footer.js';
 import ScrollToTop from './components/scrollToTop.js';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import LazyLoad from "vanilla-lazyload/dist/lazyload.min.js";
 
 class App extends Component {
   componentDidMount() {
     AOS.init()
-
-    var lazyload = new LazyLoad({ elements_selector: ".lazyImage"})
   }
   render() {
     return (

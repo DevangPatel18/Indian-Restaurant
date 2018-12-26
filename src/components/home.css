@@ -28,34 +28,31 @@
   position: relative;
 }
 
+.grid-container div img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .a {
   grid-area: a;
-  background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Tikka_Masala_Curry.png") center no-repeat;
-  background-size: cover;
 }
 
 .b {
   grid-area: b;
-  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889069/Indian%20Restaurant/home%20food%20grid/Chanamasala.jpg') center no-repeat;
-  background-size: cover;
 }
 
 .c {
   grid-area: c;
-  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/indian-sweet-371357_1920.jpg') center no-repeat;
-  background-size: cover;
 }
 
 .d {
   grid-area: d;
-  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Chicken_Biryani_in_Chennai.jpg') center no-repeat;
-  background-size: cover;
 }
 
 .e {
   grid-area: e;
-  background: url('https://res.cloudinary.com/dbeqp2lyo/image/upload/v1536889070/Indian%20Restaurant/home%20food%20grid/Marro_Dhokla.jpg') center no-repeat;
-  background-size: cover;
 }
 
 .image-credit {
@@ -151,31 +148,15 @@
   position: relative;
 }
 
-.services:before {
-  content: "";
+.services img {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_640.jpg") center no-repeat;
-  background-size: cover;
   width: 100%;
   height: 100%;
-  filter: saturate(0) brightness(1) contrast(.3)
-}
-
-@media (min-width: 640px) {
-  .services:before {
-    background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1280.jpg") center no-repeat;
-    background-size: cover;
-  }
-}
-
-@media (min-width: 1280px) {
-  .services:before {
-    background: url("https://res.cloudinary.com/dbeqp2lyo/image/upload/v1537030271/Indian%20Restaurant/restaurant-2697945_1920.jpg") center no-repeat;
-    background-size: cover;
-  }
+  filter: saturate(0) brightness(1) contrast(.3);
+  object-fit: cover;
 }
 
 .services .title.is-2 {
