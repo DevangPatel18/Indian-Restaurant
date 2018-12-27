@@ -40,39 +40,46 @@ class Reservations extends Component {
               <form action="post">
                 <div className="columns is-mobile is-multiline">
                   <div className="column">
-                    <p>Reservation Date</p>
-                    <DatePicker/>
+                    <label>Reservation Date
+                      <div className="rInput"><DatePicker /></div>
+                    </label>
                   </div>
 
                   <div className="column">
-                    <p>Reservation Time</p>
-                    <TimePicker use12Hours format="h:mm a"/>
+                    <label>Reservation Time
+                      <div className="rInput"><TimePicker use12Hours format="h:mm a" /></div>
+                    </label>
                   </div>
 
                   <div className="column">
-                    <p>Number of guests</p>
-                    <InputNumber min={1} max={12} defaultValue={2}/>
+                    <label>Number of guests
+                      <div className="rInput"><InputNumber min={1} max={12} defaultValue={2} /></div>
+                    </label>
                   </div>
 
                   <div className="column" style={{minWidth: "150px"}}>
-                    <p>Phone Number</p>
-                    <Input placeholder="(XXX) XXX-XXXX"/>
+                    <label>Phone Number
+                      <div className="rInput"><Input placeholder="(XXX) XXX-XXXX" /></div>
+                    </label>
                   </div>
 
                   <div className="column " style={{minWidth: "280px"}}>
-                    <p>Name</p>
-                    <Input placeholder="--"/>
+                    <label>Name
+                      <div className="rInput"><Input placeholder="--" /></div>
+                    </label>
                   </div>
 
                   <div className="column " style={{minWidth: "280px"}}>
-                    <p>Email</p>
-                    <Input type="email" placeholder="--"/>
+                    <label>Email
+                      <div className="rInput"><Input type="email" placeholder="--" /></div>
+                    </label>
                   </div>
                 </div>
 
                 <div>
-                  <p>Comments</p>
-                  <Input/>
+                  <label>Comments
+                    <div className="rInput"><Input /></div>
+                  </label>
                 </div>
 
                 <button type="submit" className="button is-primary is-medium is-outlined">Submit</button>

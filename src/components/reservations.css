@@ -15,6 +15,12 @@ form > * {
   margin-bottom: 2em;
 }
 
-form p {
+form label {
+  font-size: 1.1em;
+  letter-spacing: 1px;
   font-weight: bold;
+}
+
+.rInput {
+  margin-top: 1em;
 }
