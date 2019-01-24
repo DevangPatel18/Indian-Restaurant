@@ -166,13 +166,16 @@
 .services-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0 2rem;
+  padding: 1rem;
+  border-radius: 3rem;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3) ;
 }
 
 .service-div {
   display: flex;
   align-items: center;
-  margin: 2rem;
-  background: rgba(255, 255, 255, 0.3);
 }
 
 .service-icon {
@@ -195,6 +198,7 @@
   .services-tiles {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0rem;
   }
 }
 
