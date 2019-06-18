@@ -166,20 +166,20 @@
 .services-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 0 2rem;
+  padding: 1rem;
 }
 
 .service-div {
   display: flex;
   align-items: center;
-  margin: 2rem;
-  background: rgba(255, 255, 255, 0.3);
 }
 
 .service-icon {
   justify-content: center;
   padding: 1rem;
   color: hsla(290,50%,13%,1);
-  width: 95px;
+  width: 105px;
 }
 
 .service-text {
@@ -195,6 +195,7 @@
   .services-tiles {
     display: grid;
     grid-template-columns: 1fr;
+    padding: 0rem;
   }
 }
 
