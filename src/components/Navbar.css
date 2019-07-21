@@ -24,6 +24,9 @@
 
 .navbar-burger, .navbar-burger:hover {
   color: white;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .navbar {
