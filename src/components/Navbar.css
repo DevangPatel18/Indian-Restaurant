@@ -24,6 +24,9 @@
 
 .navbar-burger, .navbar-burger:hover {
   color: white;
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .navbar {
@@ -41,7 +44,7 @@
   height: 243px;
 }
 
-@media (min-width: 1088px) {
+@media (min-width: 1024px) {
   .navbar-menu {
     height: auto;
   }
@@ -56,7 +59,7 @@
   transition: background .5s;
 }
 
-@media (max-width: 1087px) {
+@media (max-width: 1023px) {
   .navbar-menu {
     background: hsla(290,15%,68%,.46);
   }
@@ -82,7 +85,7 @@
 }
 
 .navbar-storeInfo-items {
-  margin: 0 1rem;
+  margin: 0 0.6rem;
 }
 
 @media (max-width: 650px) {
@@ -95,7 +98,7 @@
   }
 }
 
-@media (min-width: 1088px) {
+@media (min-width: 1024px) {
   .navbar-storeInfo {
     width: calc(100vw - 460px - 80px - 2rem);
     justify-content: center;
