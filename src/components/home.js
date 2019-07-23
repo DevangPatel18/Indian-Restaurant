@@ -54,10 +54,10 @@ class Home extends Component {
   }
 
   render() {
-    // Set display flex inlined for i tag to supercede FontAwesome's inline-block class
+    // Set 'display: flex' style inlined for i tag to supercede FontAwesome's inline-block class
     let service_html = this.state.serviceslist.map((service, i) =>
       <div key={i} className="service-div">
-        <i className={service.class + ' is-size-1 is-size-3-mobile service-icon'} />
+        <i className={service.class + ' is-size-1 is-size-3-mobile service-icon'} style={{ display: 'flex' }}/>
         <p className="service-text">{service.text}</p>
       </div>
     );
